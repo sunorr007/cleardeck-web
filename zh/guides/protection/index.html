@@ -1,0 +1,143 @@
+<!DOCTYPE html><html lang="zh-Hans" data-crt="off"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>让防护稳定运行 · 御流 ClearDeck</title><meta name="description" content="手机一重启，Android 就会把 VPN 隧道断掉，有些厂商的系统还会直接杀掉后台服务。这篇讲怎么让御流活过重启，以及每道保险各自要付出什么代价。"><link rel="canonical" href="https://cleardeck.fenghongtech.cn/zh/guides/protection/"><link rel="alternate" hreflang="en" href="https://cleardeck.fenghongtech.cn/en/guides/protection/"><link rel="alternate" hreflang="zh-Hans" href="https://cleardeck.fenghongtech.cn/zh/guides/protection/"><link rel="alternate" hreflang="x-default" href="https://cleardeck.fenghongtech.cn/en/guides/protection/"><meta name="robots" content="index, follow, max-image-preview:large"><!-- Open Graph --><meta property="og:type" content="article"><meta property="og:site_name" content="ClearDeck"><meta property="og:title" content="让防护稳定运行 · 御流 ClearDeck"><meta property="og:description" content="手机一重启，Android 就会把 VPN 隧道断掉，有些厂商的系统还会直接杀掉后台服务。这篇讲怎么让御流活过重启，以及每道保险各自要付出什么代价。"><meta property="og:url" content="https://cleardeck.fenghongtech.cn/zh/guides/protection/"><meta property="og:image" content="https://cleardeck.fenghongtech.cn/og/zh/guides-protection.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="ClearDeck — 让防护稳定运行"><meta property="og:locale" content="zh_CN"><meta property="og:locale:alternate" content="en_US"><meta property="article:modified_time" content="2026-10-09"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="让防护稳定运行 · 御流 ClearDeck"><meta name="twitter:description" content="手机一重启，Android 就会把 VPN 隧道断掉，有些厂商的系统还会直接杀掉后台服务。这篇讲怎么让御流活过重启，以及每道保险各自要付出什么代价。"><meta name="twitter:image" content="https://cleardeck.fenghongtech.cn/og/zh/guides-protection.png"><!-- 图标：深色底 + 磷光绿盾牌，与 App 图标同一形状 --><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/icon-180.png"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#040705"><meta name="color-scheme" content="dark"><link rel="alternate" type="application/rss+xml" title="ClearDeck guides" href="/zh/guides/rss.xml"><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"让防护稳定运行","description":"手机一重启，Android 就会把 VPN 隧道断掉，有些厂商的系统还会直接杀掉后台服务。这篇讲怎么让御流活过重启，以及每道保险各自要付出什么代价。","url":"https://cleardeck.fenghongtech.cn/zh/guides/protection/","inLanguage":"zh-Hans","dateModified":"2026-10-09","author":{"@id":"https://cleardeck.fenghongtech.cn/#organization"},"publisher":{"@id":"https://cleardeck.fenghongtech.cn/#organization"},"about":{"@type":"SoftwareApplication","name":"ClearDeck"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"教程","item":"https://cleardeck.fenghongtech.cn/zh/guides/"},{"@type":"ListItem","position":2,"name":"让防护稳定运行","item":"https://cleardeck.fenghongtech.cn/zh/guides/protection/"}]}</script><style>.gd__head[data-astro-cid-oie4ccay]{margin-bottom:2rem}.gd__head[data-astro-cid-oie4ccay] h1[data-astro-cid-oie4ccay]{margin-bottom:.75rem}.gd__related[data-astro-cid-oie4ccay]{border-top:var(--border);margin-top:2.5rem;padding-top:1.5rem}.gd__related[data-astro-cid-oie4ccay] h2[data-astro-cid-oie4ccay]{text-transform:uppercase;letter-spacing:.06em;color:var(--g-500);border:0;margin-bottom:.8rem;padding:0;font-size:1rem}.gd__related[data-astro-cid-oie4ccay] ul[data-astro-cid-oie4ccay]{gap:.5rem;padding:0;list-style:none;display:grid}.gd__related[data-astro-cid-oie4ccay] li[data-astro-cid-oie4ccay]::marker,.gd__related[data-astro-cid-oie4ccay] li[data-astro-cid-oie4ccay]{color:inherit}.gd__related[data-astro-cid-oie4ccay] a[data-astro-cid-oie4ccay]{font-size:.95rem}.gd__lang[data-astro-cid-oie4ccay]{margin-top:1.5rem}
+</style><link rel="stylesheet" href="/_astro/seo.-wWuk5sy.css"><style>.crumbs[data-astro-cid-vx4iavld]{padding-block:1.1rem 0}.crumbs[data-astro-cid-vx4iavld] ol[data-astro-cid-vx4iavld]{font-family:var(--font-mono);flex-wrap:wrap;align-items:center;gap:.4rem;margin:0;padding:0;font-size:.76rem;list-style:none;display:flex}.crumbs[data-astro-cid-vx4iavld] li[data-astro-cid-vx4iavld]+li[data-astro-cid-vx4iavld]:before{content:"/";color:var(--text-faint);margin-right:.4rem}.crumbs[data-astro-cid-vx4iavld] a[data-astro-cid-vx4iavld]{color:var(--text-dim)}.crumbs[data-astro-cid-vx4iavld] a[data-astro-cid-vx4iavld]:hover,.crumbs[data-astro-cid-vx4iavld] span[data-astro-cid-vx4iavld][aria-current]{color:var(--g-300)}
+.doc[data-astro-cid-ptuyl3tj]{grid-template-columns:minmax(0,1fr);align-items:start;gap:clamp(1.5rem,1rem + 3vw,3rem);padding-block:1.5rem 2rem;display:grid}@media (width>=62rem){.doc[data-astro-cid-ptuyl3tj]{grid-template-columns:15rem minmax(0,1fr)}.doc__aside[data-astro-cid-ptuyl3tj]{position:sticky;top:5rem}}.doc__body[data-astro-cid-ptuyl3tj]{max-width:46rem}.facts[data-astro-cid-ptuyl3tj]{flex-wrap:wrap;gap:.4rem;margin:0 0 1.5rem;padding:0;list-style:none;display:flex}.toc[data-astro-cid-ptuyl3tj]{border-left:var(--border);padding-left:.9rem}.toc__title[data-astro-cid-ptuyl3tj]{text-transform:uppercase;letter-spacing:.08em;color:var(--g-500);margin-bottom:.6rem;font-size:.7rem}.toc[data-astro-cid-ptuyl3tj] ol[data-astro-cid-ptuyl3tj]{gap:.3rem;margin:0;padding:0;list-style:none;display:grid}.toc[data-astro-cid-ptuyl3tj] a[data-astro-cid-ptuyl3tj]{color:var(--text-dim);font-size:.82rem;line-height:1.45;display:block}.toc[data-astro-cid-ptuyl3tj] a[data-astro-cid-ptuyl3tj]:hover{color:var(--g-300)}.toc__sub[data-astro-cid-ptuyl3tj]{padding-left:.75rem}.toc__sub[data-astro-cid-ptuyl3tj] a[data-astro-cid-ptuyl3tj]{color:var(--text-faint);font-size:.78rem}.pn[data-astro-cid-ptuyl3tj]{border-top:var(--border);grid-template-columns:1fr 1fr;gap:.75rem;margin-top:2.5rem;padding-top:1.5rem;display:grid}@media (width<=40rem){.pn[data-astro-cid-ptuyl3tj]{grid-template-columns:1fr}}.pn__item[data-astro-cid-ptuyl3tj]{border:var(--border);border-radius:var(--radius-lg);background:var(--bg-1);gap:.25rem;padding:.8rem 1rem;text-decoration:none;display:grid}.pn__item[data-astro-cid-ptuyl3tj]:hover{border-color:var(--g-700);text-decoration:none}.pn__item--next[data-astro-cid-ptuyl3tj]{text-align:right}.pn__dir[data-astro-cid-ptuyl3tj]{color:var(--g-500);font-size:.72rem}.pn__title[data-astro-cid-ptuyl3tj]{color:var(--text-strong);font-size:.9rem;font-family:var(--font-mono)}.doc__back[data-astro-cid-ptuyl3tj]{margin-top:1.5rem}.doc__back[data-astro-cid-ptuyl3tj] a[data-astro-cid-ptuyl3tj]{font-size:.875rem}
+</style><style>.shot[data-astro-cid-pmiqfeva]{max-width:100%;margin:0;display:inline-block}.shot[data-astro-cid-pmiqfeva] img{border-radius:13px;width:100%;display:block}.shot--missing[data-astro-cid-pmiqfeva]{width:100%;display:block}.shot__missing[data-astro-cid-pmiqfeva]{border:1px dashed var(--g-800);border-radius:var(--radius-lg);background:repeating-linear-gradient(45deg, var(--bg-1) 0 12px, var(--bg-2) 12px 24px);text-align:center;place-content:center;justify-items:center;gap:.5rem;min-height:16rem;padding:1.5rem;display:grid}.shot__missing-tag[data-astro-cid-pmiqfeva]{font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.1em;color:var(--warn);border:1px solid var(--warn);border-radius:var(--radius);padding:.1rem .4rem;font-size:.7rem}.shot__missing[data-astro-cid-pmiqfeva] .mono[data-astro-cid-pmiqfeva]{color:var(--text-faint);word-break:break-all}
+</style></head> <body> <a class="skip-link" href="#main">跳到正文</a> <div class="vignette" aria-hidden="true"></div> <div class="crt-overlay" aria-hidden="true"></div> <script>
+  (function () {
+    try {
+      var stored = localStorage.getItem('cd-crt');
+      if (stored === 'on') {
+        document.documentElement.setAttribute('data-crt', 'on');
+      }
+    } catch (e) {
+      /* 隐私模式下 localStorage 可能被禁，忽略即可 */
+    }
+  })();
+</script> <header class="hdr" data-astro-cid-nen7h5rs> <div class="wrap hdr__inner" data-astro-cid-nen7h5rs> <a class="brand" href="/zh/" aria-label="ClearDeck" data-astro-cid-nen7h5rs> <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false" data-astro-cid-nen7h5rs> <rect width="32" height="32" rx="7" fill="#071009" data-astro-cid-nen7h5rs></rect> <rect x="0.5" y="0.5" width="31" height="31" rx="6.5" fill="none" stroke="#0b4a20" stroke-width="1" data-astro-cid-nen7h5rs></rect> <g transform="translate(4 4)" data-astro-cid-nen7h5rs> <path fill="#10d94f" d="M12,2L4,5.5V11c0,5 3.4,9.4 8,10.5c4.6,-1.1 8,-5.5 8,-10.5V5.5L12,2zM10.5,14.59l-2.83,-2.83l1.41,-1.41l1.41,1.41l3.54,-3.54l1.41,1.41L10.5,14.59z" data-astro-cid-nen7h5rs></path> </g> </svg> <span class="brand__name" data-astro-cid-nen7h5rs>ClearDeck</span> <span class="brand__zh" data-astro-cid-nen7h5rs>御流</span> </a> <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="打开菜单" data-astro-cid-nen7h5rs> <label class="nav-burger" for="nav-toggle" aria-hidden="true" data-astro-cid-nen7h5rs> <span data-astro-cid-nen7h5rs></span> </label> <nav class="nav" aria-label="Main" data-astro-cid-nen7h5rs> <ul class="nav__list" data-astro-cid-nen7h5rs> <li data-astro-cid-nen7h5rs> <a href="/zh/features/" data-astro-cid-nen7h5rs> 功能 </a> </li><li data-astro-cid-nen7h5rs> <a href="/zh/how-it-works/" data-astro-cid-nen7h5rs> 工作原理 </a> </li><li data-astro-cid-nen7h5rs> <a href="/zh/trust/" data-astro-cid-nen7h5rs> 隐私与信任 </a> </li><li data-astro-cid-nen7h5rs> <a href="/zh/rules/" data-astro-cid-nen7h5rs> 内置规则 </a> </li><li data-astro-cid-nen7h5rs> <a href="/zh/guides/" data-astro-cid-nen7h5rs> 教程 </a> </li><li data-astro-cid-nen7h5rs> <a href="/zh/download/" data-astro-cid-nen7h5rs> 获取 </a> </li> </ul> <div class="nav__extras" data-astro-cid-nen7h5rs> <a class="nav__more" href="/zh/faq/" data-astro-cid-nen7h5rs>常见问题</a> <a class="nav__more" href="/zh/roadmap/" data-astro-cid-nen7h5rs>路线图</a> <div class="lang" data-astro-cid-l4evwy7q> <span class="lang__icon" aria-hidden="true" data-astro-cid-l4evwy7q>⌘</span> <a href="/en/guides/protection/" hreflang="en" lang="en" title="ClearDeck — English" data-astro-cid-l4evwy7q> English </a> </div> </div> </nav> </div> </header> <script>
+  // 滚动一点才给导航加底色。不做防抖：只是一次 class 切换。
+  (function () {
+    var hdr = document.querySelector('.hdr');
+    if (!hdr) return;
+
+    function sync() {
+      hdr.classList.toggle('is-scrolled', window.scrollY > 8);
+    }
+
+    sync();
+    window.addEventListener('scroll', sync, { passive: true });
+  })();
+</script> <main id="main">   <div class="wrap" data-astro-cid-ptuyl3tj> <nav class="crumbs" aria-label="面包屑" data-astro-cid-vx4iavld> <ol data-astro-cid-vx4iavld> <li data-astro-cid-vx4iavld> <a href="/zh/" data-astro-cid-vx4iavld>首页</a> </li><li data-astro-cid-vx4iavld> <a href="/zh/guides/" data-astro-cid-vx4iavld>教程</a> </li><li data-astro-cid-vx4iavld> <span aria-current="page" data-astro-cid-vx4iavld>让防护稳定运行</span> </li> </ol> </nav> <div class="doc" data-astro-cid-ptuyl3tj> <aside class="doc__aside" aria-label="本页目录" data-astro-cid-ptuyl3tj> <nav class="toc" data-astro-cid-ptuyl3tj> <p class="toc__title mono" data-astro-cid-ptuyl3tj>本页目录</p> <ol data-astro-cid-ptuyl3tj> <li class data-astro-cid-ptuyl3tj> <a href="#为什么一重启隧道就没了" data-astro-cid-ptuyl3tj>为什么一重启隧道就没了</a> </li><li class data-astro-cid-ptuyl3tj> <a href="#没有-vpn-时阻止连接以及它真实的代价" data-astro-cid-ptuyl3tj>「没有 VPN 时阻止连接」，以及它真实的代价</a> </li><li class data-astro-cid-ptuyl3tj> <a href="#那条通知就是隧道的命" data-astro-cid-ptuyl3tj>那条通知就是隧道的命</a> </li><li class data-astro-cid-ptuyl3tj> <a href="#手机厂商拦你的时候" data-astro-cid-ptuyl3tj>手机厂商拦你的时候</a> </li><li class data-astro-cid-ptuyl3tj> <a href="#御流刻意不做的事" data-astro-cid-ptuyl3tj>御流刻意不做的事</a> </li><li class data-astro-cid-ptuyl3tj> <a href="#耗电先给个结论" data-astro-cid-ptuyl3tj>耗电，先给个结论</a> </li><li class data-astro-cid-ptuyl3tj> <a href="#接下来" data-astro-cid-ptuyl3tj>接下来</a> </li> </ol> </nav> </aside> <article class="doc__body prose" data-astro-cid-ptuyl3tj> <ul class="facts" data-astro-cid-ptuyl3tj> <li class="tag tag--dim mono" data-astro-cid-ptuyl3tj>入门</li><li class="tag tag--dim mono" data-astro-cid-ptuyl3tj>5 分钟阅读</li><li class="tag tag--dim mono" data-astro-cid-ptuyl3tj>更新于 2026-10-09</li> </ul>  <header class="gd__head" data-astro-cid-oie4ccay> <h1 data-astro-cid-oie4ccay>让防护稳定运行</h1> <p class="lede" data-astro-cid-oie4ccay>手机一重启，Android 就会把 VPN 隧道断掉，有些厂商的系统还会直接杀掉后台服务。这篇讲怎么让御流活过重启，以及每道保险各自要付出什么代价。</p> </header> <p>御流只有在运行时才有用。把防护开起来是最简单的一步 ——
+<a href="/zh/guides/install/">安装教程</a>两分钟就能走完。真正麻烦的是让它接着跑下去：
+手机重启之后、息屏很久之后，Android 和各家厂商的系统总会想办法把它停下来。</p>
+<p>这篇讲清楚三件事：隧道到底为什么断、哪个设置能解决重启、以及当手机系统非要
+杀它时你能做什么。</p>
+<h2 id="为什么一重启隧道就没了">为什么一重启隧道就没了</h2>
+<p>在原版 Android 上，手机重启的那一刻防护就停了。这不是御流的毛病：Android 会
+在开机时把每一条 VPN 隧道都断掉，等你手动再开。这是有意设计的 —— VPN 能看到
+你全部的流量，系统不会不打招呼就替你恢复一条。</p>
+<p>解决它的路径从御流开始，到 Android 自己的设置里结束。</p>
+<figure class="shot shot--phone" data-astro-cid-pmiqfeva> <div class="phone" data-astro-cid-pmiqfeva>  <img src="/_astro/settings.C0dsXhdu_167vmS.webp" srcset="/_astro/settings.C0dsXhdu_lVHwn.webp 340w, /_astro/settings.C0dsXhdu_HfxIO.webp 680w" alt="御流的设置页，靠上位置是「随系统启动」，紧挨着「加密DNS」" sizes="(max-width: 640px) 90vw, 340px" loading="lazy" decoding="async" data-astro-cid-pmiqfeva="true" width="1080" height="2125"> </div> <figcaption class="shot__caption" data-astro-cid-pmiqfeva>设置 · 随系统启动</figcaption> </figure>
+<ol>
+<li>打开<strong>设置 → 随系统启动</strong>，御流会直接跳到 Android 的 VPN 列表。</li>
+<li>在列表里找到御流，点它右侧的齿轮图标。</li>
+<li>打开<strong>始终开启的VPN</strong>。</li>
+</ol>
+<p>这一页本来就会把接下来会发生什么讲清楚：</p>
+<blockquote>
+<p>在系统VPN列表中，点击御流条目右侧的齿轮图标，打开「始终开启的VPN」。
+之后每次开机都会自动连接。</p>
+</blockquote>
+<p>打开「始终开启的VPN」后，每次开机 Android 都会自动把隧道建起来，赶在大多数
+应用发出请求之前。重启这一类问题，到这一步就算解决了。</p>
+<h2 id="没有-vpn-时阻止连接以及它真实的代价">「没有 VPN 时阻止连接」，以及它真实的代价</h2>
+<p>就在齿轮图标那个页面里，Android 可能还会给你第二个开关：<strong>在没有 VPN 时阻止
+连接</strong>（不同系统上叫法略有差别）。打开之前先想清楚，因为它会改变「出问题」的
+样子。</p>
+<p>打开拦截后，只要隧道是断的，手机就拒绝一切网络流量。好处很直接：防护重启的
+这段时间里，没有任何流量会漏出去。坏处同样真实 —— 一旦防护没启动成功，你不会
+看到广告又冒出来，而是<strong>完全没网</strong>。网页转圈、消息发不出去，很容易就以为手机
+坏了。</p>
+<aside class="note note--warn"> <span class="note__label">这不是故障</span> <p>如果你打开了「没有 VPN 时阻止连接」，请记住「完全没网」正是这个开关在按承诺
+做事，是预期行为，不是坏掉了。开启防护、或者把拦截关掉，网络会立刻恢复。</p> </aside>
+<p>所以这笔账要算明白：拦截是一道很强的保证，代价是把<strong>静默失败</strong>换成了
+<strong>大声失败</strong>。如果你宁可没网、也不要一段不受过滤的连接，那就打开它。</p>
+<h2 id="那条通知就是隧道的命">那条通知就是隧道的命</h2>
+<p>只要防护在运行，御流就会常驻一条通知，显示实时的上传与下载速度，比如
+<code>↑ 12.4 KB/秒 ↓ 1.1 MB/秒</code>，一直在刷新。</p>
+<figure class="shot shot--phone" data-astro-cid-pmiqfeva> <div class="phone" data-astro-cid-pmiqfeva>  <img src="/_astro/notification.D8Z9Mz7x_Z1FWSch.webp" srcset="/_astro/notification.D8Z9Mz7x_2tnC1H.webp 340w, /_astro/notification.D8Z9Mz7x_U4jm.webp 680w" alt="御流的常驻通知，写着「正在保护你的网络」，并显示实时上传与下载速度" sizes="(max-width: 640px) 90vw, 340px" loading="lazy" decoding="async" data-astro-cid-pmiqfeva="true" width="1080" height="2125"> </div> <figcaption class="shot__caption" data-astro-cid-pmiqfeva>这条通知维持着隧道</figcaption> </figure>
+<p>这条通知不是装饰。Android 把御流的引擎当作一个<strong>前台服务</strong>在跑，而前台服务
+恰恰就是在告诉系统「这个进程在做用户看得见的事，别回收它」。你把通知划掉，或者
+在系统里强行停止御流，就是在亲手把隧道拆掉。</p>
+<ul>
+<li>不要把这条通知划走。</li>
+<li>不要在「设置 → 应用」或清理类工具里对御流用<strong>强行停止</strong>。</li>
+<li>除非你真想停掉，否则不要点<strong>停止防护</strong>。</li>
+</ul>
+<aside class="note"> <span class="note__label">还有一个别强停的理由</span> <p>停止防护会一并清空这次的访问记录。想留下「哪些应用访问过哪里」的记录，
+就<a href="/zh/guides/export/">先导出</a>再停。</p> </aside>
+<h2 id="手机厂商拦你的时候">手机厂商拦你的时候</h2>
+<p>原版 Android 已经会压制后台应用了，但真正下狠手的是各家厂商的系统。华为
+（EMUI）、小米（MIUI、HyperOS）和 OPPO（ColorOS）都以激进地清理后台服务来
+省电出名，有时候连正在运行的 VPN 也不放过。前台服务能帮上忙，但在这些系统上
+未必够用。</p>
+<p>办法是有的，只是名字和位置随品牌、机型、系统版本而变。下面这几项请当作
+「要在你这台手机上自己找一找」的清单，而不是照抄就能对上的步骤：</p>
+<ul>
+<li><strong>自启动 / 允许自动启动</strong> —— 有些系统另有一份允许开机自启的名单。御流不在
+里面的话，「始终开启的VPN」也可能被压过去。</li>
+<li><strong>电池优化白名单</strong> —— 把御流排除在「电池优化」/「省电策略」/「应用耗电管理」
+之外，别让它闲置时被冻结。</li>
+<li><strong>在多任务里锁定</strong> —— 有些系统的最近任务界面可以给某个应用上锁，一键清理时
+不会把它清掉。这只是个提醒，不是保证，但通常有用。</li>
+</ul>
+<p>它们的共同点是一份「可信后台应用」名单，而御流需要出现在上面。如果防护总是
+过一夜就没了，先去这份名单里找原因。</p>
+<aside class="note note--warn"> <span class="note__label">各机型叫法不同</span> <p>「自启动」「电池优化」「锁定」这些字眼并不是统一标准，有的机型上根本没有。
+找不到时，用你的机型加上「VPN 后台 保活」之类的词去搜，针对具体机型的经验帖
+通常比任何通用清单都准。</p> </aside>
+<h2 id="御流刻意不做的事">御流刻意不做的事</h2>
+<p>御流没有用那套常见的保活手段。应用里<strong>没有 WakeLock、没有 AlarmManager、没有
+WorkManager、没有 JobScheduler</strong>，也没有开机广播接收器。整个后台策略只有一条：
+一个前台服务 —— 也就是 Android 真正认可的那种「用户看得见的工作」。</p>
+<p>这让御流很干净：它不会为了活着而反复唤醒手机，也不需要特殊电源锁。代价是：
+进程什么时候可以被回收，由系统说了算，不由应用说了算。这也是那条通知如此重要
+的原因，也是上面那份厂商白名单值得你花五分钟的原因。</p>
+<h2 id="耗电先给个结论">耗电，先给个结论</h2>
+<p>维持隧道很便宜。在一台 Android 11 的 OnePlus 6T 上实测，三十分钟的防护总共
+花掉约 20.67 秒 CPU 时间，大致相当于单核的 1.148%；后台的界面进程几乎不占
+CPU。完整的拆解，以及省电模式放弃了什么，都在
+<a href="/zh/guides/power-saving/">省电模式与耗电</a>里。</p>
+<h2 id="接下来">接下来</h2>
+<ul>
+<li><a href="/zh/guides/power-saving/">省电模式与耗电</a> —— 实测开销，以及什么时候值得
+把省电打开</li>
+<li><a href="/zh/guides/troubleshooting/">防护启动不了怎么办</a> —— 另一个 VPN 应用占着
+连接、证书过期，以及其他常见原因</li>
+</ul> <section class="gd__related" data-astro-cid-oie4ccay> <h2 data-astro-cid-oie4ccay>相关教程</h2> <ul data-astro-cid-oie4ccay> <li data-astro-cid-oie4ccay> <a href="/zh/guides/install/" data-astro-cid-oie4ccay>安装御流并开启防护</a> </li><li data-astro-cid-oie4ccay> <a href="/zh/guides/power-saving/" data-astro-cid-oie4ccay>省电模式与耗电</a> </li><li data-astro-cid-oie4ccay> <a href="/zh/guides/troubleshooting/" data-astro-cid-oie4ccay>防护启动不了怎么办</a> </li> </ul> </section><p class="gd__lang small muted" data-astro-cid-oie4ccay> 本教程同时提供  <a href="/en/guides/protection/" hreflang="en" data-astro-cid-oie4ccay> English </a> </p> </article> </div> <nav class="pn" aria-label="上一篇 / 下一篇" data-astro-cid-ptuyl3tj> <a class="pn__item pn__item--prev" href="/zh/guides/install/" rel="prev" data-astro-cid-ptuyl3tj> <span class="pn__dir mono" data-astro-cid-ptuyl3tj>← 上一篇</span> <span class="pn__title" data-astro-cid-ptuyl3tj>安装御流并开启防护</span> </a> <a class="pn__item pn__item--next" href="/zh/guides/dashboard/" rel="next" data-astro-cid-ptuyl3tj> <span class="pn__dir mono" data-astro-cid-ptuyl3tj>下一篇 →</span> <span class="pn__title" data-astro-cid-ptuyl3tj>看懂仪表盘</span> </a> </nav> <p class="doc__back" data-astro-cid-ptuyl3tj> <a href="/zh/guides/" data-astro-cid-ptuyl3tj>← 全部教程</a> </p> </div>  </main> <footer class="ftr" data-astro-cid-jo6i4kqk> <div class="wrap" data-astro-cid-jo6i4kqk> <div class="ftr__top" data-astro-cid-jo6i4kqk> <div class="ftr__brand" data-astro-cid-jo6i4kqk> <p class="ftr__name" data-astro-cid-jo6i4kqk>ClearDeck<span class="ftr__zh" data-astro-cid-jo6i4kqk>御流</span></p> <p class="small muted ftr__tagline" data-astro-cid-jo6i4kqk>Android 本地网络防火墙</p> <p class="small ftr__status" data-astro-cid-jo6i4kqk> <span class="tag tag--dim" data-astro-cid-jo6i4kqk>开发中 · v0.1.0</span> </p> </div> <div class="ftr__cols" data-astro-cid-jo6i4kqk> <nav class="ftr__col" aria-label="产品" data-astro-cid-jo6i4kqk> <h2 class="ftr__coltitle" data-astro-cid-jo6i4kqk>产品</h2> <ul data-astro-cid-jo6i4kqk> <li data-astro-cid-jo6i4kqk> <a href="/zh/features/" data-astro-cid-jo6i4kqk>功能</a> </li><li data-astro-cid-jo6i4kqk> <a href="/zh/how-it-works/" data-astro-cid-jo6i4kqk>工作原理</a> </li><li data-astro-cid-jo6i4kqk> <a href="/zh/rules/" data-astro-cid-jo6i4kqk>内置规则</a> </li><li data-astro-cid-jo6i4kqk> <a href="/zh/download/" data-astro-cid-jo6i4kqk>获取</a> </li> </ul> </nav><nav class="ftr__col" aria-label="了解" data-astro-cid-jo6i4kqk> <h2 class="ftr__coltitle" data-astro-cid-jo6i4kqk>了解</h2> <ul data-astro-cid-jo6i4kqk> <li data-astro-cid-jo6i4kqk> <a href="/zh/guides/" data-astro-cid-jo6i4kqk>教程</a> </li><li data-astro-cid-jo6i4kqk> <a href="/zh/faq/" data-astro-cid-jo6i4kqk>常见问题</a> </li><li data-astro-cid-jo6i4kqk> <a href="/zh/changelog/" data-astro-cid-jo6i4kqk>更新日志</a> </li><li data-astro-cid-jo6i4kqk> <a href="/zh/roadmap/" data-astro-cid-jo6i4kqk>路线图</a> </li> </ul> </nav><nav class="ftr__col" aria-label="法务" data-astro-cid-jo6i4kqk> <h2 class="ftr__coltitle" data-astro-cid-jo6i4kqk>法务</h2> <ul data-astro-cid-jo6i4kqk> <li data-astro-cid-jo6i4kqk> <a href="/zh/legal/privacy-policy/" data-astro-cid-jo6i4kqk>隐私政策</a> </li><li data-astro-cid-jo6i4kqk> <a href="/zh/legal/terms/" data-astro-cid-jo6i4kqk>用户协议</a> </li><li data-astro-cid-jo6i4kqk> <a href="/zh/legal/licenses/" data-astro-cid-jo6i4kqk>开源许可</a> </li> </ul> </nav><nav class="ftr__col" aria-label="公司" data-astro-cid-jo6i4kqk> <h2 class="ftr__coltitle" data-astro-cid-jo6i4kqk>公司</h2> <ul data-astro-cid-jo6i4kqk> <li data-astro-cid-jo6i4kqk> <a href="/zh/about/" data-astro-cid-jo6i4kqk>关于</a> </li> </ul> </nav> <div class="ftr__col" data-astro-cid-jo6i4kqk> <h2 class="ftr__coltitle" data-astro-cid-jo6i4kqk>联系</h2> <ul data-astro-cid-jo6i4kqk> <li data-astro-cid-jo6i4kqk> <span class="muted" title="TODO: 上线前替换" data-astro-cid-jo6i4kqk> contact@example.com </span> </li> <li data-astro-cid-jo6i4kqk> <span class="muted" data-astro-cid-jo6i4kqk>GitHub</span> </li> </ul> </div> </div> </div> <div class="divider-dots" data-astro-cid-jo6i4kqk></div> <div class="ftr__bottom" data-astro-cid-jo6i4kqk> <p class="small muted" data-astro-cid-jo6i4kqk>
+© 2026 北京烽鸿科技有限责任公司 · 基于 GPL-3.0 许可发布 · v0.1.0 </p> <div class="ftr__bottom-right" data-astro-cid-jo6i4kqk> <button class="crt-btn" type="button" id="crt-toggle" aria-pressed="false" data-label-on="扫描线效果已开" data-label-off="扫描线效果已关" data-astro-cid-avkchape> <span class="crt-btn__box" aria-hidden="true" data-astro-cid-avkchape></span> <span class="crt-btn__text" data-astro-cid-avkchape>扫描线</span> </button>  <script>
+  (function () {
+    var btn = document.getElementById('crt-toggle');
+    if (!btn) return;
+    var root = document.documentElement;
+
+    function sync() {
+      var on = root.getAttribute('data-crt') === 'on';
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      btn.title = on ? btn.dataset.labelOn : btn.dataset.labelOff;
+    }
+
+    sync();
+
+    btn.addEventListener('click', function () {
+      var on = root.getAttribute('data-crt') === 'on';
+      var next = on ? 'off' : 'on';
+      root.setAttribute('data-crt', next);
+      try {
+        localStorage.setItem('cd-crt', next);
+      } catch (e) {
+        /* 忽略：无法持久化也仍然切换当前页面 */
+      }
+      sync();
+    });
+  })();
+</script> </div> </div> <p class="small ftr__disclaimer muted" data-astro-cid-jo6i4kqk>ClearDeck 是独立项目。Android 是 Google LLC 的商标。</p> </div> </footer>  </body> </html>
