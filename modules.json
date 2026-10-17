@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "channel": "stable",
+  "generated": "202610170026",
+  "generatedAt": "2026-10-17T00:26:00Z",
+  "modules": [
+    {
+      "id": "cleardeck-ads",
+      "layer": "domain",
+      "file": "cleardeck-ads.zip",
+      "artifact": "ads-domain.yaml",
+      "version": "202610170026-9f8ae286",
+      "stamp": "202610170026",
+      "entries": 87431,
+      "bytes": 2420673,
+      "zipBytes": 707471,
+      "sha256": "5d06e98e8f4ff6006d62df04b3bd70db0ddbe3d9ed52fe8ff37fbb5f673ed89e"
+    },
+    {
+      "id": "cleardeck-track",
+      "layer": "domain",
+      "file": "cleardeck-track.zip",
+      "artifact": "track-domain.yaml",
+      "version": "202610170026-2015033e",
+      "stamp": "202610170026",
+      "entries": 125007,
+      "bytes": 3792246,
+      "zipBytes": 1010917,
+      "sha256": "edb89d6478973283e9ae9fc3150a3b1c7e53292a91b95ccc6d31c993b06eabc9"
+    },
+    {
+      "id": "cleardeck-malware",
+      "layer": "domain",
+      "file": "cleardeck-malware.zip",
+      "artifact": "malware-domain.yaml",
+      "version": "202610170026-48b08eab",
+      "stamp": "202610170026",
+      "entries": 227849,
+      "bytes": 5968205,
+      "zipBytes": 1639290,
+      "sha256": "1b440ffe2a3c3bf12045d06a798a0318b896f02e56dd56b54be37fbeb01039eb"
+    },
+    {
+      "id": "cleardeck-ads-deep",
+      "layer": "url",
+      "file": "cleardeck-ads-deep.zip",
+      "artifact": "ads-deep.url",
+      "version": "202610170026-26d30226",
+      "stamp": "202610170026",
+      "entries": 1596,
+      "bytes": 51004,
+      "zipBytes": 19768,
+      "sha256": "044f6093e4aedd726019b50c5f8ed9ae936f0c8ba0785fd87226767f38694736"
+    },
+    {
+      "id": "cleardeck-track-deep",
+      "layer": "url",
+      "file": "cleardeck-track-deep.zip",
+      "artifact": "track-deep.url",
+      "version": "202610170026-38e57747",
+      "stamp": "202610170026",
+      "entries": 9570,
+      "bytes": 329483,
+      "zipBytes": 109748,
+      "sha256": "30e762227deedce647460b4857a1289bd95578c71d46bf091ffc41a64118c58c"
+    }
+  ],
+  "totals": {
+    "entries": 451453,
+    "bytes": 12561611,
+    "zipBytes": 3487194
+  }
+}
