@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "channel": "stable",
+  "generated": "202610251552",
+  "generatedAt": "2026-10-25T15:52:00Z",
+  "modules": [
+    {
+      "id": "cleardeck-ads",
+      "layer": "domain",
+      "file": "cleardeck-ads.zip",
+      "artifact": "ads-domain.yaml",
+      "version": "202610251001-589cde5",
+      "stamp": "202610251001",
+      "entries": 95029,
+      "bytes": 2641616,
+      "zipBytes": 773337,
+      "sha256": "98cb6b906b8e10500b614558bd8020538cd64b58b8000dd485cee6ef32835459"
+    },
+    {
+      "id": "cleardeck-track",
+      "layer": "domain",
+      "file": "cleardeck-track.zip",
+      "artifact": "track-domain.yaml",
+      "version": "202610251001-390b330e",
+      "stamp": "202610251001",
+      "entries": 129972,
+      "bytes": 3944394,
+      "zipBytes": 1049155,
+      "sha256": "d5fe9bb8ff0fdfb434e9e2b6b0ab663c7b466aad1216d775be3e0ed170e8cf63"
+    },
+    {
+      "id": "cleardeck-malware",
+      "layer": "domain",
+      "file": "cleardeck-malware.zip",
+      "artifact": "malware-domain.yaml",
+      "version": "202610251001-80cea1d6",
+      "stamp": "202610251001",
+      "entries": 212422,
+      "bytes": 5534976,
+      "zipBytes": 1500452,
+      "sha256": "fb02a7c2630bbee8f8335d5c7656696aa6bcf0afcc4b3fd3f8e69151c3c27bde"
+    },
+    {
+      "id": "cleardeck-ads-deep",
+      "layer": "url",
+      "file": "cleardeck-ads-deep.zip",
+      "artifact": "ads-deep.url",
+      "version": "202610251001-ac20f714",
+      "stamp": "202610251001",
+      "entries": 1924,
+      "bytes": 64133,
+      "zipBytes": 25477,
+      "sha256": "7afcd7c20d1ab2d820fbcc6d072beb0515e174fbea74a7d2abc2cfc56d132580"
+    },
+    {
+      "id": "cleardeck-track-deep",
+      "layer": "url",
+      "file": "cleardeck-track-deep.zip",
+      "artifact": "track-deep.url",
+      "version": "202610251001-5b8449cc",
+      "stamp": "202610251001",
+      "entries": 9604,
+      "bytes": 330870,
+      "zipBytes": 110227,
+      "sha256": "aaa7d14742f2679bbad4227433ba5f9ef219026a96543bddb380c75e1bb6ba57"
+    },
+    {
+      "id": "cleardeck-ads-pattern",
+      "layer": "pattern",
+      "file": "cleardeck-ads-pattern.zip",
+      "artifact": "ads-pattern.pat",
+      "version": "202610251552-c67ee3aa",
+      "stamp": "202610251552",
+      "entries": 6,
+      "bytes": 375,
+      "zipBytes": 394,
+      "sha256": "5241e0f6b6a415378328f58bcf3c554792446a3320d5c16e064281718d8fd127"
+    },
+    {
+      "id": "cleardeck-track-pattern",
+      "layer": "pattern",
+      "file": "cleardeck-track-pattern.zip",
+      "artifact": "track-pattern.pat",
+      "version": "202610251552-f75c3d99",
+      "stamp": "202610251552",
+      "entries": 34,
+      "bytes": 910,
+      "zipBytes": 629,
+      "sha256": "91d53602ea716783836077d6d39f374222f163c7147c5373d9dc22148c9acc5e"
+    }
+  ],
+  "totals": {
+    "entries": 448991,
+    "bytes": 12517274,
+    "zipBytes": 3459671
+  }
+}
