@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>隐私政策</title>
+<meta name="cleardeck-doc" content="privacy_zh">
+<meta name="cleardeck-version" content="1.2">
+<meta name="cleardeck-updated" content="2026-10-25">
+<meta name="cleardeck-effective" content="2026-10-25">
+<meta name="robots" content="noindex">
+<style>
+:root { color-scheme: light dark; --bg: #ffffff; --fg: #1f2937; --muted: #64748b; --border: #e2e8f0; --accent: #0ea5e9; --code: #f1f5f9; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0f172a; --fg: #e2e8f0; --muted: #94a3b8; --border: #1e293b; --accent: #38bdf8; --code: #1e293b; }
+}
+html, body { background: var(--bg); color: var(--fg); }
+body {
+  margin: 0;
+  padding: 20px 20px calc(32px + env(safe-area-inset-bottom));
+  font-family: -apple-system, "Noto Sans CJK SC", "Source Han Sans SC", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-text-size-adjust: 100%;
+  word-break: break-word;
+}
+h1, h2, h3 { color: var(--fg); line-height: 1.4; }
+h1 { font-size: 22px; margin: 0 0 .4em; }
+h2 { font-size: 18px; margin: 1.8em 0 .6em; }
+h3 { font-size: 16px; margin: 1.4em 0 .4em; }
+.docmeta { margin: 0 0 1.6em; color: var(--muted); font-size: 13px; }
+p { margin: .6em 0; }
+ul, ol { padding-left: 1.4em; margin: .6em 0; }
+li { margin: .3em 0; }
+a { color: var(--accent); text-decoration: none; }
+strong { font-weight: 600; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 1.6em 0; }
+code { background: var(--code); border-radius: 4px; padding: .1em .35em; font-size: .9em; }
+blockquote {
+  margin: 1em 0;
+  padding: .7em .9em;
+  border-left: 3px solid var(--accent);
+  background: var(--code);
+  border-radius: 0 8px 8px 0;
+}
+blockquote p { margin: .25em 0; }
+table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: .55em .6em; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; white-space: nowrap; }
+</style>
+</head>
+<body>
+<!-- Generated from ClearDeck-web/src/content/legal. Do not edit by hand. -->
+<header>
+<h1>隐私政策</h1>
+<p class="docmeta">版本 1.2 · 最后更新 2026-10-25 · 生效日期 2026-10-25</p>
+</header>
+<p>本政策适用于由北京烽鸿科技有限责任公司（以下简称“我们”）发布和运营的御流 Android 应用（以下简称“本应用”）。</p>
+<h2>定义</h2>
+<table>
+<thead>
+<tr>
+<th>术语</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>个人信息</td>
+<td>以电子或者其他方式记录的与已识别或者可识别的自然人有关的各种信息，不包括匿名化处理后的信息。</td>
+</tr>
+<tr>
+<td>处理</td>
+<td>对个人信息进行的收集、存储、使用、加工、传输、提供、公开、删除等操作。</td>
+</tr>
+<tr>
+<td>本应用</td>
+<td>由我们发布并运营的御流 Android 应用。</td>
+</tr>
+<tr>
+<td>规则名单</td>
+<td>本应用内置或由您导入的广告、跟踪与恶意网址过滤规则。</td>
+</tr>
+<tr>
+<td>深度解析</td>
+<td>本应用提供的可选功能，用于按完整请求地址匹配规则，需要您在本机安装证书。</td>
+</tr>
+<tr>
+<td>会员服务</td>
+<td>本应用在华为渠道、OPPO 渠道与小米渠道提供的付费功能及相关服务。</td>
+</tr>
+<tr>
+<td>设备标识</td>
+<td>Android 系统提供的 ANDROID_ID 经 SHA-256 哈希计算后的值。</td>
+</tr>
+</tbody></table>
+<h2>适用范围与数据控制者</h2>
+<p>本政策适用于我们通过本应用处理个人信息的行为。本应用个人信息处理的控制者为北京烽鸿科技有限责任公司，联系方式见本政策“联系方式”一节。</p>
+<p>本政策不适用于由第三方独立提供的产品或服务。第三方处理者的处理活动适用其各自的隐私政策。</p>
+<h2>本机网络处理</h2>
+<p>本应用使用 Android 的 VpnService 在本机建立 TUN 连接，用于查看和判定设备上各应用的网络连接。规则匹配与拦截决定均在本机完成，我们未设置用于中转上网流量的远程节点或中转服务器。</p>
+<p>为避免本应用自身的网络请求被自身捕获，本应用会将自身从 TUN 捕获范围中排除。该处理不涉及将您的上网流量内容传输给我们。</p>
+<h2>权限使用说明</h2>
+<p>本应用仅申请实现功能所必需的系统权限，各权限的用途如下：</p>
+<table>
+<thead>
+<tr>
+<th>权限</th>
+<th>为什么需要</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>网络连接</td>
+<td>转发经防护放行的网络流量，并下载规则名单更新、核验会员订单。</td>
+</tr>
+<tr>
+<td>网络状态</td>
+<td>感知 Wi-Fi 与移动网络之间的切换，在网络变化后保持防护正常工作。</td>
+</tr>
+<tr>
+<td>显示通知</td>
+<td>在通知栏常驻显示防护运行状态，并在防护被系统终止时提醒您。</td>
+</tr>
+<tr>
+<td>查看所有已安装应用</td>
+<td>识别哪个应用正在联网，以便按应用展示网络访问并设置拦截规则。</td>
+</tr>
+<tr>
+<td>前台服务</td>
+<td>让防护在您离开应用后持续运行，不被系统提前终止。</td>
+</tr>
+<tr>
+<td>VPN 连接（系统授权弹窗）</td>
+<td>在本机建立流量过滤通道，是拦截广告与跟踪连接的前提。</td>
+</tr>
+</tbody></table>
+<p>渠道特有：</p>
+<ul>
+<li>仅华为渠道：为在应用内检查并安装应用市场提供的更新，会使用应用市场更新组件所需的系统权限。</li>
+<li>仅华为、小米渠道：统计组件会读取设备标识（如广告标识符）用于统计归因，仅在您同意本政策后启用。</li>
+<li>部分渠道的统计或支付组件会申请网络状态权限，用于其自身的网络连接判断。</li>
+</ul>
+<h2>我们不处理的信息</h2>
+<p>我们不会收集、上传或存储以下信息：</p>
+<ul>
+<li>您的上网流量内容，包括您访问的网站、应用发出的请求及通讯内容。</li>
+<li>您访问的网站或域名清单。</li>
+<li>访问记录的内容。</li>
+<li>深度解析连接中除“本机拦截或放行”这一判定结果之外的任何内容。</li>
+<li>通讯录、短信、照片、文件、精确位置等个人信息。本应用未申请访问上述信息的权限。</li>
+</ul>
+<h2>我们处理的信息</h2>
+<h3>处理活动总表</h3>
+<table>
+<thead>
+<tr>
+<th>处理活动</th>
+<th>数据类别</th>
+<th>目的</th>
+<th>合法性基础</th>
+<th>接收方</th>
+<th>保留期限</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>规则名单更新</td>
+<td>IP 地址、请求时间、请求路径、标准 HTTP 头</td>
+<td>检查并获取规则名单更新</td>
+<td>履行合同所必需</td>
+<td>我们运营的规则下载服务</td>
+<td>按网络安全与运维所需的最短期限保留</td>
+</tr>
+<tr>
+<td>使用统计与崩溃分析（仅华为、小米渠道）</td>
+<td>设备型号、系统版本、功能使用统计、崩溃与 ANR 信息</td>
+<td>了解设备兼容性与功能使用情况、修复稳定性问题</td>
+<td>您的同意</td>
+<td>友盟+（Umeng）</td>
+<td>按友盟隐私政策规定的期限</td>
+</tr>
+<tr>
+<td>会员服务（仅华为渠道）</td>
+<td>华为账号 openId、订单凭证、商品标识、ANDROID_ID 的 SHA-256 哈希、试用起点</td>
+<td>核验订单、绑定与找回会员、计算试用期</td>
+<td>履行合同所必需</td>
+<td>华为</td>
+<td>会员关系存续期间及处理争议、履行法定义务所需期限</td>
+</tr>
+<tr>
+<td>会员服务（仅 OPPO 渠道）</td>
+<td>订单号、商品标识、ANDROID_ID 的 SHA-256 哈希、试用起点、您主动提供的支付宝交易号</td>
+<td>核验订单、按设备归属与找回会员、计算试用期</td>
+<td>履行合同所必需</td>
+<td>支付宝</td>
+<td>会员关系存续期间及处理争议、履行法定义务所需期限</td>
+</tr>
+<tr>
+<td>会员服务（仅小米渠道）</td>
+<td>小米账号 uid、订单号、商品标识、ANDROID_ID 的 SHA-256 哈希、试用起点</td>
+<td>核验订单、绑定与找回会员、计算试用期</td>
+<td>履行合同所必需</td>
+<td>小米</td>
+<td>会员关系存续期间及处理争议、履行法定义务所需期限</td>
+</tr>
+<tr>
+<td>深度解析（可选）</td>
+<td>被拦截连接中用于本机判定的内容</td>
+<td>按完整请求地址作出拦截或放行决定</td>
+<td>您的同意（开启功能并安装证书）</td>
+<td>无，仅在本机处理</td>
+<td>不存储、不上传</td>
+</tr>
+<tr>
+<td>已安装应用信息</td>
+<td>应用包名、应用名称、应用图标</td>
+<td>按应用展示网络访问与规则</td>
+<td>履行合同所必需</td>
+<td>无，仅在本机处理</td>
+<td>仅在本机缓存，不上传</td>
+</tr>
+</tbody></table>
+<h3>规则名单更新</h3>
+<p>本应用在启动、回到前台以及您手动发起检查时，向我们运营的 cleardeck-dl.fenghongtech.cn 请求规则名单清单，以判断是否存在新版本。</p>
+<p>该请求可能在您同意本政策之前发生，因为本应用启动时会执行一次清单检查。该请求不包含应用版本号、设备标识、账号或其他标识信息。我们的服务器会接收并记录 IP 地址、请求时间、请求路径及标准 HTTP 头。</p>
+<p>自动下载规则模块包仅在非计费网络下进行。您在功能模块页手动发起检查时，不受非计费网络限制。规则名单下载至本机后，过滤仍完全在本机进行。</p>
+<h3>使用统计与崩溃分析</h3>
+<p>仅在华为渠道与小米渠道的安装包中，本应用集成友盟+（Umeng）的 U-App 与 U-APM 组件。</p>
+<p>友盟 SDK 在本应用启动时执行不采集数据的预初始化；只有在您同意本政策后，我们才会启动正式采集。收集的信息包括设备型号、系统版本、功能使用统计、Java 与 Native 崩溃信息及 ANR 信息，用于了解设备兼容性与功能使用情况、发现并修复稳定性问题。上述信息由友盟+ 受我们委托处理，其隐私政策见 <a href="https://www.umeng.com/page/policy">https://www.umeng.com/page/policy</a>。</p>
+<p>Google 渠道与 OPPO 渠道的安装包不集成友盟 SDK，不进行上述采集。</p>
+<h3>会员服务与支付</h3>
+<p>本应用在华为渠道、OPPO 渠道与小米渠道提供会员服务。</p>
+<p>在华为渠道，支付由华为应用市场处理，我们不接触、不保存您的支付方式、银行卡号或账单地址。为核验订单、绑定会员、支持跨设备找回月费与年费会员以及按设备计算试用期，本应用会向我们的会员服务发送以下信息：华为账号 openId、订单凭证、商品标识、ANDROID_ID 的 SHA-256 哈希值、试用起点。</p>
+<p>在 OPPO 渠道，支付由支付宝处理，本应用不接触您的支付宝账号与支付信息：下单内容（订单串）由我们的服务器签名后交给支付宝客户端完成付款。为核验订单、按设备归属会员以及计算试用期，本应用会向该会员服务发送以下信息：订单号、商品标识、ANDROID_ID 的 SHA-256 哈希值、试用起点；为补记个别未到账的付款，还会发送您主动提供的支付宝交易号。OPPO 渠道没有渠道账号体系，会员权益（含永久会员）按设备标识哈希归属本机。</p>
+<p>在小米渠道，支付由小米应用商店（应用联运）处理，我们不接触、不保存您的支付方式、银行卡号或账单地址。为核验订单、绑定会员、支持跨设备找回月费与年费会员以及按设备计算试用期，本应用会向我们的会员服务发送以下信息：小米账号 uid、订单号、商品标识、ANDROID_ID 的 SHA-256 哈希值、试用起点。永久会员按设备标识哈希归属购买时的设备。</p>
+<p>上述信息仅用于提供会员服务、防止同一订单被重复使用、绑定永久会员至购买设备以及计算试用期。会员数据与访问记录相互独立，会员服务无法获知您访问的网站或访问记录。</p>
+<h3>深度解析</h3>
+<p>深度解析为可选功能，默认关闭。开启后，证书在本机生成，不会离开设备；解析过程中看到的内容仅用于在本机作出拦截或放行决定，不会上传。</p>
+<p>您可以限定深度解析仅对指定应用生效、仅在 Wi-Fi 下生效，并限制每条连接的最大检查内容（默认 256 KB）。从本机移除证书即可关闭该功能。</p>
+<h2>设备本地数据</h2>
+<p>以下数据仅存储在本机，不会上传：</p>
+<table>
+<thead>
+<tr>
+<th>数据</th>
+<th>存储位置</th>
+<th>清除方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>访问记录（应用、域名与判定结果）</td>
+<td>本机数据库</td>
+<td>防护停止时清空；可在停止前导出为 CSV 文件</td>
+</tr>
+<tr>
+<td>设置与拦截、放行规则</td>
+<td>本机存储</td>
+<td>卸载本应用时删除</td>
+</tr>
+<tr>
+<td>规则名单与流量统计</td>
+<td>本机数据库</td>
+<td>卸载本应用时删除</td>
+</tr>
+<tr>
+<td>会员状态快照</td>
+<td>本机数据库</td>
+<td>卸载本应用时删除</td>
+</tr>
+</tbody></table>
+<p>您可以在本应用的“工具”页面将访问记录导出为 CSV 文件。该文件保存在您的设备存储中，不会发送给我们。</p>
+<h2>第三方处理者</h2>
+<p>我们仅在实现本政策所述目的所必需的范围内与以下处理者共享信息：</p>
+<table>
+<thead>
+<tr>
+<th>处理者</th>
+<th>服务</th>
+<th>涉及的数据</th>
+<th>隐私政策</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>友盟+（Umeng）</td>
+<td>使用统计与崩溃分析</td>
+<td>设备型号、系统版本、功能使用统计、崩溃与 ANR 信息</td>
+<td><a href="https://www.umeng.com/page/policy">https://www.umeng.com/page/policy</a></td>
+</tr>
+<tr>
+<td>华为</td>
+<td>应用内支付与账号登录（仅华为渠道会员）</td>
+<td>华为账号 openId、订单凭证、商品标识</td>
+<td>适用华为的隐私政策与会员服务规则</td>
+</tr>
+<tr>
+<td>支付宝</td>
+<td>应用内支付（仅 OPPO 渠道会员）</td>
+<td>交易与订单信息、设备信息、网络信息</td>
+<td>适用支付宝的隐私政策</td>
+</tr>
+<tr>
+<td>小米</td>
+<td>应用内支付与账号登录（仅小米渠道会员）</td>
+<td>小米账号 uid、订单信息、设备标识、网络信息</td>
+<td>适用小米的隐私政策</td>
+</tr>
+</tbody></table>
+<h2>信息共享与跨境传输</h2>
+<p>我们不会出售您的个人信息。除本政策明确说明的情形外，我们不会向第三方提供您的个人信息，但法律法规另有规定或经您另行同意的除外。</p>
+<p>如相关处理涉及个人信息跨境传输，我们将按照适用法律的要求履行相应程序并采取必要保护措施。</p>
+<h2>信息安全</h2>
+<p>我们采取与本应用功能相适应的技术和管理措施保护个人信息，包括使用 HTTPS 传输、最小化收集范围、将网络过滤与访问记录限制在本机、以及限制内部访问权限。</p>
+<p>互联网传输与电子存储无法保证绝对安全。如发生个人信息安全事件，我们将按照适用法律的要求采取处置措施并履行通知义务。</p>
+<h2>您的权利</h2>
+<p>在适用法律允许的范围内，您有权：</p>
+<ul>
+<li>查阅、复制您的个人信息；</li>
+<li>要求更正不准确的个人信息；</li>
+<li>要求删除您的个人信息；</li>
+<li>撤回您此前作出的同意；</li>
+<li>要求我们解释个人信息处理规则；</li>
+<li>就个人信息处理向我们提出投诉。</li>
+</ul>
+<p>您可以通过本政策“联系方式”一节的邮箱行使上述权利。我们将在法律规定的期限内答复。</p>
+<p>撤回同意不影响撤回前基于您的同意已经进行的处理活动的效力。卸载本应用后，本应用将不再收集使用统计与崩溃信息。</p>
+<h2>未成年人保护</h2>
+<p>本应用不面向未满十四周岁的儿童。我们不会在明知的情况下收集未满十四周岁儿童的个人信息。如我们发现在未获得监护人同意的情况下收集了儿童个人信息，将依法删除。</p>
+<h2>政策变更</h2>
+<p>我们可能根据法律法规、业务或技术变化更新本政策。更新后的政策将在本网站发布，并更新文首的版本号、最后更新日期与生效日期。涉及您重大权益的变更，我们将通过本网站公告或其他合理方式通知您。</p>
+<h2>联系方式</h2>
+<p>如您对本政策或个人信息处理有任何疑问、意见或投诉，请通过以下邮箱联系我们：<a href="mailto:support@fenghongtech.cn">support@fenghongtech.cn</a>。</p>
+<h2>适用法律与争议解决</h2>
+<p>本政策适用中华人民共和国法律。因本政策产生的争议，双方应协商解决；协商不成的，提交北京市有管辖权的人民法院解决。</p>
+</body>
+</html>

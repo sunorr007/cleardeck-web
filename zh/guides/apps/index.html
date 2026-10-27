@@ -1,0 +1,211 @@
+<!DOCTYPE html><html lang="zh-Hans" data-crt="off"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>按应用查看与管控 · 御流 ClearDeck</title><meta name="description" content="从每个应用看它在网上做了什么、访问记录怎么看，以及怎样把一条记录变成一条规则 —— 只对一个应用生效，还是对所有应用生效。"><link rel="canonical" href="https://cleardeck.fenghongtech.cn/zh/guides/apps/"><link rel="alternate" hreflang="en" href="https://cleardeck.fenghongtech.cn/en/guides/apps/"><link rel="alternate" hreflang="zh-Hans" href="https://cleardeck.fenghongtech.cn/zh/guides/apps/"><link rel="alternate" hreflang="x-default" href="https://cleardeck.fenghongtech.cn/en/guides/apps/"><meta name="robots" content="index, follow, max-image-preview:large"><!-- Open Graph --><meta property="og:type" content="article"><meta property="og:site_name" content="ClearDeck"><meta property="og:title" content="按应用查看与管控 · 御流 ClearDeck"><meta property="og:description" content="从每个应用看它在网上做了什么、访问记录怎么看，以及怎样把一条记录变成一条规则 —— 只对一个应用生效，还是对所有应用生效。"><meta property="og:url" content="https://cleardeck.fenghongtech.cn/zh/guides/apps/"><meta property="og:image" content="https://cleardeck.fenghongtech.cn/og/zh/guides-apps.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="ClearDeck — 按应用查看与管控"><meta property="og:locale" content="zh_CN"><meta property="og:locale:alternate" content="en_US"><meta property="article:modified_time" content="2026-10-09"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="按应用查看与管控 · 御流 ClearDeck"><meta name="twitter:description" content="从每个应用看它在网上做了什么、访问记录怎么看，以及怎样把一条记录变成一条规则 —— 只对一个应用生效，还是对所有应用生效。"><meta name="twitter:image" content="https://cleardeck.fenghongtech.cn/og/zh/guides-apps.png"><!-- 图标：深色底 + 磷光绿盾牌，与 App 图标同一形状 --><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/icon-180.png"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#040705"><meta name="color-scheme" content="dark"><link rel="alternate" type="application/rss+xml" title="ClearDeck guides" href="/zh/guides/rss.xml"><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"按应用查看与管控","description":"从每个应用看它在网上做了什么、访问记录怎么看，以及怎样把一条记录变成一条规则 —— 只对一个应用生效，还是对所有应用生效。","url":"https://cleardeck.fenghongtech.cn/zh/guides/apps/","inLanguage":"zh-Hans","dateModified":"2026-10-09","author":{"@id":"https://cleardeck.fenghongtech.cn/#organization"},"publisher":{"@id":"https://cleardeck.fenghongtech.cn/#organization"},"about":{"@type":"SoftwareApplication","name":"ClearDeck"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"教程","item":"https://cleardeck.fenghongtech.cn/zh/guides/"},{"@type":"ListItem","position":2,"name":"按应用查看与管控","item":"https://cleardeck.fenghongtech.cn/zh/guides/apps/"}]}</script><style>.gd__head[data-astro-cid-oie4ccay]{margin-bottom:2rem}.gd__head[data-astro-cid-oie4ccay] h1[data-astro-cid-oie4ccay]{margin-bottom:.75rem}.gd__related[data-astro-cid-oie4ccay]{border-top:var(--border);margin-top:2.5rem;padding-top:1.5rem}.gd__related[data-astro-cid-oie4ccay] h2[data-astro-cid-oie4ccay]{text-transform:uppercase;letter-spacing:.06em;color:var(--g-500);border:0;margin-bottom:.8rem;padding:0;font-size:1rem}.gd__related[data-astro-cid-oie4ccay] ul[data-astro-cid-oie4ccay]{gap:.5rem;padding:0;list-style:none;display:grid}.gd__related[data-astro-cid-oie4ccay] li[data-astro-cid-oie4ccay]::marker,.gd__related[data-astro-cid-oie4ccay] li[data-astro-cid-oie4ccay]{color:inherit}.gd__related[data-astro-cid-oie4ccay] a[data-astro-cid-oie4ccay]{font-size:.95rem}.gd__lang[data-astro-cid-oie4ccay]{margin-top:1.5rem}
+</style><link rel="stylesheet" href="/_astro/seo.-wWuk5sy.css"><style>.crumbs[data-astro-cid-vx4iavld]{padding-block:1.1rem 0}.crumbs[data-astro-cid-vx4iavld] ol[data-astro-cid-vx4iavld]{font-family:var(--font-mono);flex-wrap:wrap;align-items:center;gap:.4rem;margin:0;padding:0;font-size:.76rem;list-style:none;display:flex}.crumbs[data-astro-cid-vx4iavld] li[data-astro-cid-vx4iavld]+li[data-astro-cid-vx4iavld]:before{content:"/";color:var(--text-faint);margin-right:.4rem}.crumbs[data-astro-cid-vx4iavld] a[data-astro-cid-vx4iavld]{color:var(--text-dim)}.crumbs[data-astro-cid-vx4iavld] a[data-astro-cid-vx4iavld]:hover,.crumbs[data-astro-cid-vx4iavld] span[data-astro-cid-vx4iavld][aria-current]{color:var(--g-300)}
+.doc[data-astro-cid-ptuyl3tj]{grid-template-columns:minmax(0,1fr);align-items:start;gap:clamp(1.5rem,1rem + 3vw,3rem);padding-block:1.5rem 2rem;display:grid}@media (width>=62rem){.doc[data-astro-cid-ptuyl3tj]{grid-template-columns:15rem minmax(0,1fr)}.doc__aside[data-astro-cid-ptuyl3tj]{position:sticky;top:5rem}}.doc__body[data-astro-cid-ptuyl3tj]{max-width:46rem}.facts[data-astro-cid-ptuyl3tj]{flex-wrap:wrap;gap:.4rem;margin:0 0 1.5rem;padding:0;list-style:none;display:flex}.toc[data-astro-cid-ptuyl3tj]{border-left:var(--border);padding-left:.9rem}.toc__title[data-astro-cid-ptuyl3tj]{text-transform:uppercase;letter-spacing:.08em;color:var(--g-500);margin-bottom:.6rem;font-size:.7rem}.toc[data-astro-cid-ptuyl3tj] ol[data-astro-cid-ptuyl3tj]{gap:.3rem;margin:0;padding:0;list-style:none;display:grid}.toc[data-astro-cid-ptuyl3tj] a[data-astro-cid-ptuyl3tj]{color:var(--text-dim);font-size:.82rem;line-height:1.45;display:block}.toc[data-astro-cid-ptuyl3tj] a[data-astro-cid-ptuyl3tj]:hover{color:var(--g-300)}.toc__sub[data-astro-cid-ptuyl3tj]{padding-left:.75rem}.toc__sub[data-astro-cid-ptuyl3tj] a[data-astro-cid-ptuyl3tj]{color:var(--text-faint);font-size:.78rem}.pn[data-astro-cid-ptuyl3tj]{border-top:var(--border);grid-template-columns:1fr 1fr;gap:.75rem;margin-top:2.5rem;padding-top:1.5rem;display:grid}@media (width<=40rem){.pn[data-astro-cid-ptuyl3tj]{grid-template-columns:1fr}}.pn__item[data-astro-cid-ptuyl3tj]{border:var(--border);border-radius:var(--radius-lg);background:var(--bg-1);gap:.25rem;padding:.8rem 1rem;text-decoration:none;display:grid}.pn__item[data-astro-cid-ptuyl3tj]:hover{border-color:var(--g-700);text-decoration:none}.pn__item--next[data-astro-cid-ptuyl3tj]{text-align:right}.pn__dir[data-astro-cid-ptuyl3tj]{color:var(--g-500);font-size:.72rem}.pn__title[data-astro-cid-ptuyl3tj]{color:var(--text-strong);font-size:.9rem;font-family:var(--font-mono)}.doc__back[data-astro-cid-ptuyl3tj]{margin-top:1.5rem}.doc__back[data-astro-cid-ptuyl3tj] a[data-astro-cid-ptuyl3tj]{font-size:.875rem}
+</style><style>.shot[data-astro-cid-pmiqfeva]{max-width:100%;margin:0;display:inline-block}.shot[data-astro-cid-pmiqfeva] img{border-radius:13px;width:100%;display:block}.shot--missing[data-astro-cid-pmiqfeva]{width:100%;display:block}.shot__missing[data-astro-cid-pmiqfeva]{border:1px dashed var(--g-800);border-radius:var(--radius-lg);background:repeating-linear-gradient(45deg, var(--bg-1) 0 12px, var(--bg-2) 12px 24px);text-align:center;place-content:center;justify-items:center;gap:.5rem;min-height:16rem;padding:1.5rem;display:grid}.shot__missing-tag[data-astro-cid-pmiqfeva]{font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.1em;color:var(--warn);border:1px solid var(--warn);border-radius:var(--radius);padding:.1rem .4rem;font-size:.7rem}.shot__missing[data-astro-cid-pmiqfeva] .mono[data-astro-cid-pmiqfeva]{color:var(--text-faint);word-break:break-all}
+</style></head> <body> <a class="skip-link" href="#main">跳到正文</a> <div class="vignette" aria-hidden="true"></div> <div class="crt-overlay" aria-hidden="true"></div> <script>
+  (function () {
+    try {
+      var stored = localStorage.getItem('cd-crt');
+      if (stored === 'on') {
+        document.documentElement.setAttribute('data-crt', 'on');
+      }
+    } catch (e) {
+      /* 隐私模式下 localStorage 可能被禁，忽略即可 */
+    }
+  })();
+</script> <header class="hdr" data-astro-cid-nen7h5rs> <div class="wrap hdr__inner" data-astro-cid-nen7h5rs> <a class="brand" href="/zh/" aria-label="ClearDeck" data-astro-cid-nen7h5rs> <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false" data-astro-cid-nen7h5rs> <rect width="32" height="32" rx="7" fill="#071009" data-astro-cid-nen7h5rs></rect> <rect x="0.5" y="0.5" width="31" height="31" rx="6.5" fill="none" stroke="#0b4a20" stroke-width="1" data-astro-cid-nen7h5rs></rect> <g transform="translate(4 4)" data-astro-cid-nen7h5rs> <path fill="#10d94f" d="M12,2L4,5.5V11c0,5 3.4,9.4 8,10.5c4.6,-1.1 8,-5.5 8,-10.5V5.5L12,2zM10.5,14.59l-2.83,-2.83l1.41,-1.41l1.41,1.41l3.54,-3.54l1.41,1.41L10.5,14.59z" data-astro-cid-nen7h5rs></path> </g> </svg> <span class="brand__name" data-astro-cid-nen7h5rs>ClearDeck</span> <span class="brand__zh" data-astro-cid-nen7h5rs>御流</span> </a> <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="打开菜单" data-astro-cid-nen7h5rs> <label class="nav-burger" for="nav-toggle" aria-hidden="true" data-astro-cid-nen7h5rs> <span data-astro-cid-nen7h5rs></span> </label> <nav class="nav" aria-label="Main" data-astro-cid-nen7h5rs> <ul class="nav__list" data-astro-cid-nen7h5rs> <li data-astro-cid-nen7h5rs> <a href="/zh/features/" data-astro-cid-nen7h5rs> 功能 </a> </li><li data-astro-cid-nen7h5rs> <a href="/zh/how-it-works/" data-astro-cid-nen7h5rs> 工作原理 </a> </li><li data-astro-cid-nen7h5rs> <a href="/zh/trust/" data-astro-cid-nen7h5rs> 隐私与信任 </a> </li><li data-astro-cid-nen7h5rs> <a href="/zh/rules/" data-astro-cid-nen7h5rs> 内置规则 </a> </li><li data-astro-cid-nen7h5rs> <a href="/zh/guides/" data-astro-cid-nen7h5rs> 教程 </a> </li><li data-astro-cid-nen7h5rs> <a href="/zh/download/" data-astro-cid-nen7h5rs> 获取 </a> </li> </ul> <div class="nav__extras" data-astro-cid-nen7h5rs> <a class="nav__more" href="/zh/faq/" data-astro-cid-nen7h5rs>常见问题</a> <a class="nav__more" href="/zh/roadmap/" data-astro-cid-nen7h5rs>路线图</a> <div class="lang" data-astro-cid-l4evwy7q> <span class="lang__icon" aria-hidden="true" data-astro-cid-l4evwy7q>⌘</span> <a href="/en/guides/apps/" hreflang="en" lang="en" title="ClearDeck — English" data-astro-cid-l4evwy7q> English </a> </div> </div> </nav> </div> </header> <script>
+  // 滚动一点才给导航加底色。不做防抖：只是一次 class 切换。
+  (function () {
+    var hdr = document.querySelector('.hdr');
+    if (!hdr) return;
+
+    function sync() {
+      hdr.classList.toggle('is-scrolled', window.scrollY > 8);
+    }
+
+    sync();
+    window.addEventListener('scroll', sync, { passive: true });
+  })();
+</script> <main id="main">   <div class="wrap" data-astro-cid-ptuyl3tj> <nav class="crumbs" aria-label="面包屑" data-astro-cid-vx4iavld> <ol data-astro-cid-vx4iavld> <li data-astro-cid-vx4iavld> <a href="/zh/" data-astro-cid-vx4iavld>首页</a> </li><li data-astro-cid-vx4iavld> <a href="/zh/guides/" data-astro-cid-vx4iavld>教程</a> </li><li data-astro-cid-vx4iavld> <span aria-current="page" data-astro-cid-vx4iavld>按应用查看与管控</span> </li> </ol> </nav> <div class="doc" data-astro-cid-ptuyl3tj> <aside class="doc__aside" aria-label="本页目录" data-astro-cid-ptuyl3tj> <nav class="toc" data-astro-cid-ptuyl3tj> <p class="toc__title mono" data-astro-cid-ptuyl3tj>本页目录</p> <ol data-astro-cid-ptuyl3tj> <li class data-astro-cid-ptuyl3tj> <a href="#怎么进去" data-astro-cid-ptuyl3tj>怎么进去</a> </li><li class data-astro-cid-ptuyl3tj> <a href="#实时活动与访问历史" data-astro-cid-ptuyl3tj>实时活动与访问历史</a> </li><li class data-astro-cid-ptuyl3tj> <a href="#认不出来的那些行" data-astro-cid-ptuyl3tj>认不出来的那些行</a> </li><li class data-astro-cid-ptuyl3tj> <a href="#应用详情" data-astro-cid-ptuyl3tj>应用详情</a> </li><li class data-astro-cid-ptuyl3tj> <a href="#访问记录" data-astro-cid-ptuyl3tj>访问记录</a> </li><li class data-astro-cid-ptuyl3tj> <a href="#把一条记录变成规则" data-astro-cid-ptuyl3tj>把一条记录变成规则</a> </li><li class data-astro-cid-ptuyl3tj> <a href="#导出以及一句提醒" data-astro-cid-ptuyl3tj>导出，以及一句提醒</a> </li><li class data-astro-cid-ptuyl3tj> <a href="#接下来" data-astro-cid-ptuyl3tj>接下来</a> </li> </ol> </nav> </aside> <article class="doc__body prose" data-astro-cid-ptuyl3tj> <ul class="facts" data-astro-cid-ptuyl3tj> <li class="tag tag--dim mono" data-astro-cid-ptuyl3tj>进阶</li><li class="tag tag--dim mono" data-astro-cid-ptuyl3tj>6 分钟阅读</li><li class="tag tag--dim mono" data-astro-cid-ptuyl3tj>更新于 2026-10-09</li> </ul>  <header class="gd__head" data-astro-cid-oie4ccay> <h1 data-astro-cid-oie4ccay>按应用查看与管控</h1> <p class="lede" data-astro-cid-oie4ccay>从每个应用看它在网上做了什么、访问记录怎么看，以及怎样把一条记录变成一条规则 —— 只对一个应用生效，还是对所有应用生效。</p> </header> <p>仪表盘上的总数告诉你发生了什么，应用视图告诉你<strong>是谁干的</strong> —— 还能把一条连接
+变成一条规则。这是御流里最需要动手的部分，所以这篇从「怎么进去」一直讲到
+「规则怎么加才不会白加」。</p>
+<h2 id="怎么进去">怎么进去</h2>
+<p>应用列表<strong>不是</strong>底部标签。底部只有仪表盘、模块、设置、工具四项，没有别的。
+进应用视图要从仪表盘走，有两条路：</p>
+<ul>
+<li>点<strong>活跃连接</strong>统计格。</li>
+<li>点<strong>应用 Top 5</strong> 右边的<strong>更多</strong>。</li>
+</ul>
+<p>两个入口打开的是同一个界面，界面里有<strong>实时活动</strong>和<strong>访问历史</strong>两个页签。<strong>活跃连接</strong>
+进到实时这一侧，<strong>更多</strong>则打开历史列表。</p>
+<h2 id="实时活动与访问历史">实时活动与访问历史</h2>
+<figure class="shot shot--phone" data-astro-cid-pmiqfeva> <div class="phone" data-astro-cid-pmiqfeva>  <img src="/_astro/apps-live.Enrx4hHc_ZTzTPQ.webp" srcset="/_astro/apps-live.Enrx4hHc_61TTm.webp 340w, /_astro/apps-live.Enrx4hHc_Z1g2nrP.webp 680w" alt="御流的应用列表，实时与历史两个页签，每个应用显示活跃连接数或尝试次数与拦截次数" sizes="(max-width: 640px) 90vw, 340px" loading="lazy" decoding="async" data-astro-cid-pmiqfeva="true" width="1080" height="2125"> </div> <figcaption class="shot__caption" data-astro-cid-pmiqfeva>应用列表 · 实时活动与访问历史</figcaption> </figure>
+<p>列表分成两个页签，看每一行的文案就知道自己在哪个页签：</p>
+<table>
+<thead>
+<tr>
+<th>页签</th>
+<th>English</th>
+<th>每行显示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>实时活动</strong></td>
+<td>Live</td>
+<td><code>%1$d active connections</code> —— 这个应用此刻开着的连接数</td>
+</tr>
+<tr>
+<td><strong>访问历史</strong></td>
+<td>History</td>
+<td><code>%1$d attempts · %2$d blocked</code>，以及「最后一次是多久以前」</td>
+</tr>
+</tbody>
+</table>
+<p><strong>实时</strong>是这一瞬间的快照，应用开、关连接时会跟着变。<strong>历史</strong>是累计的：它数的
+是这个应用在本次防护期间做过的每一次尝试，不论有没有被拦。想知道某个应用
+「一直在干什么」而不是「此刻在干什么」，就看它。</p>
+<h2 id="认不出来的那些行">认不出来的那些行</h2>
+<p>有几行没有应用名。当系统没法把一条连接归到某个已安装应用时，这一行会显示
+<strong>未知来源</strong>，或者在 Android 能给出用户 ID 但给不出应用时显示 <code>uid &lt;数字&gt;</code>。
+这些不是故障，而是御流如实报告 Android 告诉了它什么、没告诉它什么，而不是替它
+编一个名字。</p>
+<h2 id="应用详情">应用详情</h2>
+<figure class="shot shot--phone" data-astro-cid-pmiqfeva> <div class="phone" data-astro-cid-pmiqfeva>  <img src="/_astro/app-detail.gCmgNb2Q_Z2pX6Qd.webp" srcset="/_astro/app-detail.gCmgNb2Q_20I3ar.webp 340w, /_astro/app-detail.gCmgNb2Q_Z1x79Be.webp 680w" alt="御流的应用详情页，显示上传、下载、已节省三个统计格，以及一张拦截构成卡片" sizes="(max-width: 640px) 90vw, 340px" loading="lazy" decoding="async" data-astro-cid-pmiqfeva="true" width="1080" height="2125"> </div> <figcaption class="shot__caption" data-astro-cid-pmiqfeva>应用详情 · 统计与拦截构成</figcaption> </figure>
+<p>点一个应用会打开它的详情页。最上面是三个统计格，用的词和大盘一致：</p>
+<table>
+<thead>
+<tr>
+<th>统计格</th>
+<th>English</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>上传</strong></td>
+<td>Upload</td>
+<td>本次防护期间这个应用发出去的字节数</td>
+</tr>
+<tr>
+<td><strong>下载</strong></td>
+<td>Download</td>
+<td>它收到的字节数</td>
+</tr>
+<tr>
+<td><strong>已节省</strong></td>
+<td>Saved</td>
+<td>拦掉这个应用的连接大约省下的流量，算法与仪表盘相同</td>
+</tr>
+</tbody>
+</table>
+<p>下面是一张<strong>拦截构成</strong>卡片 —— 说明是这个应用的连接的哪一类规则拦下的。在
+地址（URL）层而不是域名层被拦下的条目，会带一个<strong>深度</strong>标记。有它，说明这条
+拦截来自地址匹配，而不是名单上的某个域名 —— 这也是深度解析确实在干活的直接
+证据。见<a href="/zh/guides/deep-inspection/">深度解析</a>。</p>
+<h2 id="访问记录">访问记录</h2>
+<figure class="shot shot--phone" data-astro-cid-pmiqfeva> <div class="phone" data-astro-cid-pmiqfeva>  <img src="/_astro/app-detail-access-log.YsSN5_Vi_Z2hYbgS.webp" srcset="/_astro/app-detail-access-log.YsSN5_Vi_1uDuQr.webp 340w, /_astro/app-detail-access-log.YsSN5_Vi_Z11PzKq.webp 680w" alt="御流的访问记录，逐条列出连接记录，右侧有「拦截」与「放行」按钮" sizes="(max-width: 640px) 90vw, 340px" loading="lazy" decoding="async" data-astro-cid-pmiqfeva="true" width="1080" height="2125"> </div> <figcaption class="shot__caption" data-astro-cid-pmiqfeva>访问记录 · 一条记录一条连接</figcaption> </figure>
+<p><strong>访问记录</strong>是这张应用做过的每一次尝试，可以展开。每条记录就是一条连接，带
+主机名和结果，还有 —— 这是最有用的地方 —— 两个按钮：<strong>拦截</strong>和<strong>放行</strong>。
+被动的一条记录，就是靠这两个按钮变成主动的规则。</p>
+<p>列表上方有筛选和排序两项：</p>
+<table>
+<thead>
+<tr>
+<th>控件</th>
+<th>English 选项</th>
+<th>中文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>筛选</td>
+<td>All / Blocked only / Allowed only</td>
+<td>全部 / 仅拦截 / 仅放通</td>
+</tr>
+<tr>
+<td>排序</td>
+<td>By time / By site</td>
+<td>按时间 / 按站点</td>
+</tr>
+</tbody>
+</table>
+<p><strong>按站点</strong>会把同一个站点的多条记录并成一行。当一个应用反复联系同一个主机、
+你想看它到底会联系哪些站点时，这个视图最合适。<strong>按时间</strong>则适合追单独一件事 ——
+「我刚打开它之后发生了什么？」</p>
+<h2 id="把一条记录变成规则">把一条记录变成规则</h2>
+<figure class="shot shot--phone" data-astro-cid-pmiqfeva> <div class="phone" data-astro-cid-pmiqfeva>  <img src="/_astro/app-rule-scope.bBYgvgk3_FTO67.webp" srcset="/_astro/app-rule-scope.bBYgvgk3_Z1BOVKj.webp 340w, /_astro/app-rule-scope.bBYgvgk3_ZVaQ68.webp 680w" alt="御流里点「拦截」或「放行」后弹出的「应用到…」选择框，可选「仅这个应用」或「所有应用」" sizes="(max-width: 640px) 90vw, 340px" loading="lazy" decoding="async" data-astro-cid-pmiqfeva="true" width="1080" height="2125"> </div> <figcaption class="shot__caption" data-astro-cid-pmiqfeva>应用到… · 选择生效范围</figcaption> </figure>
+<p>点<strong>拦截</strong>或<strong>放行</strong>不会立刻落规则，而是先弹出<strong>应用到…</strong>，给你两个选择：</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>English</th>
+<th>什么时候选它</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>仅这个应用</strong></td>
+<td>This app only</td>
+<td>这个主机只对这个应用有意义，比如它自己的遥测</td>
+</tr>
+<tr>
+<td><strong>所有应用</strong></td>
+<td>All apps</td>
+<td>这个主机你不希望这台手机上的任何应用去连</td>
+</tr>
+</tbody>
+</table>
+<p><strong>所有应用</strong>范围很宽：它不只管你正在看的这个应用，对所有应用都生效，而且会变成
+一条全局规则。拿不准的时候，<strong>仅这个应用</strong>是更稳的默认值，范围更大的那条以后
+随时可以补。你为这个应用加的规则也会出现在它的详情页上，可以在那里用<strong>移除</strong>
+一条条删掉。</p>
+<p>不论选哪个，加进去的规则都会出现在<a href="/zh/guides/modules/">模块</a>页的
+<strong>我的拦截与放行</strong>里。这张卡刻意做成不能一键关掉，因为它是你自己的决定，不是
+内置名单。这里还适用两条优先级：</p>
+<ul>
+<li>同一个主机上，<strong>放行</strong>规则赢过<strong>拦截</strong>规则。你放行了某个主机，任何模块都
+不能再把它拦回来。</li>
+<li><strong>你写的</strong>规则赢过内置模块，永远。</li>
+</ul>
+<p>这两条都是有意的：内置名单只是默认值，你的决定排在它们前面。</p>
+<h2 id="导出以及一句提醒">导出，以及一句提醒</h2>
+<p>这个页面上也有<strong>导出记录</strong>，可以只导出某一个应用的记录。格式、列名和完整步骤见
+<a href="/zh/guides/export/">导出访问记录</a>。</p>
+<aside class="note note--warn"> <span class="note__label">先导出再停</span> <p>记录会随防护关闭而清空。这里看到的任何东西，只要你打算留下 —— 写反馈、自己
+存档、以后还想照着加规则 —— 都要在点<strong>停止防护</strong>之前先导出。隧道一断，本次的
+记录就没了，也找不回来。</p> </aside>
+<h2 id="接下来">接下来</h2>
+<ul>
+<li><a href="/zh/guides/dashboard/">看懂仪表盘</a> —— 这些数字是从哪儿来的</li>
+<li><a href="/zh/guides/modules/">模块</a> —— 你的规则会盖过的那些名单</li>
+<li><a href="/zh/guides/export/">导出访问记录</a> —— 在记录被清掉之前留下它</li>
+</ul> <section class="gd__related" data-astro-cid-oie4ccay> <h2 data-astro-cid-oie4ccay>相关教程</h2> <ul data-astro-cid-oie4ccay> <li data-astro-cid-oie4ccay> <a href="/zh/guides/dashboard/" data-astro-cid-oie4ccay>看懂仪表盘</a> </li><li data-astro-cid-oie4ccay> <a href="/zh/guides/modules/" data-astro-cid-oie4ccay>规则名单：五个内置模块与自己的名单</a> </li><li data-astro-cid-oie4ccay> <a href="/zh/guides/export/" data-astro-cid-oie4ccay>把访问记录导出成 CSV</a> </li> </ul> </section><p class="gd__lang small muted" data-astro-cid-oie4ccay> 本教程同时提供  <a href="/en/guides/apps/" hreflang="en" data-astro-cid-oie4ccay> English </a> </p> </article> </div> <nav class="pn" aria-label="上一篇 / 下一篇" data-astro-cid-ptuyl3tj> <a class="pn__item pn__item--prev" href="/zh/guides/dashboard/" rel="prev" data-astro-cid-ptuyl3tj> <span class="pn__dir mono" data-astro-cid-ptuyl3tj>← 上一篇</span> <span class="pn__title" data-astro-cid-ptuyl3tj>看懂仪表盘</span> </a> <a class="pn__item pn__item--next" href="/zh/guides/modules/" rel="next" data-astro-cid-ptuyl3tj> <span class="pn__dir mono" data-astro-cid-ptuyl3tj>下一篇 →</span> <span class="pn__title" data-astro-cid-ptuyl3tj>规则名单：五个内置模块与自己的名单</span> </a> </nav> <p class="doc__back" data-astro-cid-ptuyl3tj> <a href="/zh/guides/" data-astro-cid-ptuyl3tj>← 全部教程</a> </p> </div>  </main> <footer class="ftr" data-astro-cid-jo6i4kqk> <div class="wrap" data-astro-cid-jo6i4kqk> <div class="ftr__top" data-astro-cid-jo6i4kqk> <div class="ftr__brand" data-astro-cid-jo6i4kqk> <p class="ftr__name" data-astro-cid-jo6i4kqk>ClearDeck<span class="ftr__zh" data-astro-cid-jo6i4kqk>御流</span></p> <p class="small muted ftr__tagline" data-astro-cid-jo6i4kqk>Android 本地网络防火墙</p> <p class="small ftr__status" data-astro-cid-jo6i4kqk> <span class="tag tag--dim" data-astro-cid-jo6i4kqk>已发布 · v1.0.0</span> </p> </div> <div class="ftr__cols" data-astro-cid-jo6i4kqk> <nav class="ftr__col" aria-label="产品" data-astro-cid-jo6i4kqk> <h2 class="ftr__coltitle" data-astro-cid-jo6i4kqk>产品</h2> <ul data-astro-cid-jo6i4kqk> <li data-astro-cid-jo6i4kqk> <a href="/zh/features/" data-astro-cid-jo6i4kqk>功能</a> </li><li data-astro-cid-jo6i4kqk> <a href="/zh/how-it-works/" data-astro-cid-jo6i4kqk>工作原理</a> </li><li data-astro-cid-jo6i4kqk> <a href="/zh/rules/" data-astro-cid-jo6i4kqk>内置规则</a> </li><li data-astro-cid-jo6i4kqk> <a href="/zh/download/" data-astro-cid-jo6i4kqk>获取</a> </li> </ul> </nav><nav class="ftr__col" aria-label="了解" data-astro-cid-jo6i4kqk> <h2 class="ftr__coltitle" data-astro-cid-jo6i4kqk>了解</h2> <ul data-astro-cid-jo6i4kqk> <li data-astro-cid-jo6i4kqk> <a href="/zh/guides/" data-astro-cid-jo6i4kqk>教程</a> </li><li data-astro-cid-jo6i4kqk> <a href="/zh/faq/" data-astro-cid-jo6i4kqk>常见问题</a> </li><li data-astro-cid-jo6i4kqk> <a href="/zh/changelog/" data-astro-cid-jo6i4kqk>更新日志</a> </li><li data-astro-cid-jo6i4kqk> <a href="/zh/roadmap/" data-astro-cid-jo6i4kqk>路线图</a> </li> </ul> </nav><nav class="ftr__col" aria-label="法务" data-astro-cid-jo6i4kqk> <h2 class="ftr__coltitle" data-astro-cid-jo6i4kqk>法务</h2> <ul data-astro-cid-jo6i4kqk> <li data-astro-cid-jo6i4kqk> <a href="/zh/legal/privacy-policy/" data-astro-cid-jo6i4kqk>隐私政策</a> </li><li data-astro-cid-jo6i4kqk> <a href="/zh/legal/terms/" data-astro-cid-jo6i4kqk>用户协议</a> </li><li data-astro-cid-jo6i4kqk> <a href="/zh/legal/third-party-sdk/" data-astro-cid-jo6i4kqk>第三方 SDK</a> </li><li data-astro-cid-jo6i4kqk> <a href="/zh/legal/membership/" data-astro-cid-jo6i4kqk>会员服务协议</a> </li> </ul> </nav><nav class="ftr__col" aria-label="公司" data-astro-cid-jo6i4kqk> <h2 class="ftr__coltitle" data-astro-cid-jo6i4kqk>公司</h2> <ul data-astro-cid-jo6i4kqk> <li data-astro-cid-jo6i4kqk> <a href="/zh/about/" data-astro-cid-jo6i4kqk>关于</a> </li> </ul> </nav> <div class="ftr__col" data-astro-cid-jo6i4kqk> <h2 class="ftr__coltitle" data-astro-cid-jo6i4kqk>联系</h2> <ul data-astro-cid-jo6i4kqk> <li data-astro-cid-jo6i4kqk> <a href="mailto:support@fenghongtech.cn" data-astro-cid-jo6i4kqk>support@fenghongtech.cn</a> </li> <li data-astro-cid-jo6i4kqk> <span class="muted" data-astro-cid-jo6i4kqk>GitHub</span> </li> </ul> </div> </div> </div> <div class="divider-dots" data-astro-cid-jo6i4kqk></div> <div class="ftr__bottom" data-astro-cid-jo6i4kqk> <p class="small muted" data-astro-cid-jo6i4kqk>
+© 2026 北京烽鸿科技有限责任公司 · v1.0.0 </p> <div class="ftr__bottom-right" data-astro-cid-jo6i4kqk> <button class="crt-btn" type="button" id="crt-toggle" aria-pressed="false" data-label-on="扫描线效果已开" data-label-off="扫描线效果已关" data-astro-cid-avkchape> <span class="crt-btn__box" aria-hidden="true" data-astro-cid-avkchape></span> <span class="crt-btn__text" data-astro-cid-avkchape>扫描线</span> </button>  <script>
+  (function () {
+    var btn = document.getElementById('crt-toggle');
+    if (!btn) return;
+    var root = document.documentElement;
+
+    function sync() {
+      var on = root.getAttribute('data-crt') === 'on';
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      btn.title = on ? btn.dataset.labelOn : btn.dataset.labelOff;
+    }
+
+    sync();
+
+    btn.addEventListener('click', function () {
+      var on = root.getAttribute('data-crt') === 'on';
+      var next = on ? 'off' : 'on';
+      root.setAttribute('data-crt', next);
+      try {
+        localStorage.setItem('cd-crt', next);
+      } catch (e) {
+        /* 忽略：无法持久化也仍然切换当前页面 */
+      }
+      sync();
+    });
+  })();
+</script> </div> </div> <p class="small ftr__disclaimer muted" data-astro-cid-jo6i4kqk>ClearDeck 是独立项目。Android 是 Google LLC 的商标。</p> </div> </footer>  </body> </html>

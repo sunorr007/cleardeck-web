@@ -1,0 +1,182 @@
+<!DOCTYPE html><html lang="en" data-crt="off"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Deep inspection and the certificate · ClearDeck</title><meta name="description" content="What deep inspection adds, why it needs a certificate on your phone, how to install and remove it, and the honest limits of the technique."><link rel="canonical" href="https://cleardeck.fenghongtech.cn/en/guides/deep-inspection/"><link rel="alternate" hreflang="en" href="https://cleardeck.fenghongtech.cn/en/guides/deep-inspection/"><link rel="alternate" hreflang="zh-Hans" href="https://cleardeck.fenghongtech.cn/zh/guides/deep-inspection/"><link rel="alternate" hreflang="x-default" href="https://cleardeck.fenghongtech.cn/en/guides/deep-inspection/"><meta name="robots" content="index, follow, max-image-preview:large"><!-- Open Graph --><meta property="og:type" content="article"><meta property="og:site_name" content="ClearDeck"><meta property="og:title" content="Deep inspection and the certificate · ClearDeck"><meta property="og:description" content="What deep inspection adds, why it needs a certificate on your phone, how to install and remove it, and the honest limits of the technique."><meta property="og:url" content="https://cleardeck.fenghongtech.cn/en/guides/deep-inspection/"><meta property="og:image" content="https://cleardeck.fenghongtech.cn/og/en/guides-deep-inspection.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="ClearDeck — Deep inspection and the certificate"><meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="zh_CN"><meta property="article:modified_time" content="2026-10-09"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Deep inspection and the certificate · ClearDeck"><meta name="twitter:description" content="What deep inspection adds, why it needs a certificate on your phone, how to install and remove it, and the honest limits of the technique."><meta name="twitter:image" content="https://cleardeck.fenghongtech.cn/og/en/guides-deep-inspection.png"><!-- 图标：深色底 + 磷光绿盾牌，与 App 图标同一形状 --><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/icon-180.png"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#040705"><meta name="color-scheme" content="dark"><link rel="alternate" type="application/rss+xml" title="ClearDeck guides" href="/en/guides/rss.xml"><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Deep inspection and the certificate","description":"What deep inspection adds, why it needs a certificate on your phone, how to install and remove it, and the honest limits of the technique.","url":"https://cleardeck.fenghongtech.cn/en/guides/deep-inspection/","inLanguage":"en","dateModified":"2026-10-09","author":{"@id":"https://cleardeck.fenghongtech.cn/#organization"},"publisher":{"@id":"https://cleardeck.fenghongtech.cn/#organization"},"about":{"@type":"SoftwareApplication","name":"ClearDeck"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Guides","item":"https://cleardeck.fenghongtech.cn/en/guides/"},{"@type":"ListItem","position":2,"name":"Deep inspection and the certificate","item":"https://cleardeck.fenghongtech.cn/en/guides/deep-inspection/"}]}</script><style>.gd__head[data-astro-cid-oie4ccay]{margin-bottom:2rem}.gd__head[data-astro-cid-oie4ccay] h1[data-astro-cid-oie4ccay]{margin-bottom:.75rem}.gd__related[data-astro-cid-oie4ccay]{border-top:var(--border);margin-top:2.5rem;padding-top:1.5rem}.gd__related[data-astro-cid-oie4ccay] h2[data-astro-cid-oie4ccay]{text-transform:uppercase;letter-spacing:.06em;color:var(--g-500);border:0;margin-bottom:.8rem;padding:0;font-size:1rem}.gd__related[data-astro-cid-oie4ccay] ul[data-astro-cid-oie4ccay]{gap:.5rem;padding:0;list-style:none;display:grid}.gd__related[data-astro-cid-oie4ccay] li[data-astro-cid-oie4ccay]::marker,.gd__related[data-astro-cid-oie4ccay] li[data-astro-cid-oie4ccay]{color:inherit}.gd__related[data-astro-cid-oie4ccay] a[data-astro-cid-oie4ccay]{font-size:.95rem}.gd__lang[data-astro-cid-oie4ccay]{margin-top:1.5rem}
+</style><link rel="stylesheet" href="/_astro/seo.-wWuk5sy.css"><style>.crumbs[data-astro-cid-vx4iavld]{padding-block:1.1rem 0}.crumbs[data-astro-cid-vx4iavld] ol[data-astro-cid-vx4iavld]{font-family:var(--font-mono);flex-wrap:wrap;align-items:center;gap:.4rem;margin:0;padding:0;font-size:.76rem;list-style:none;display:flex}.crumbs[data-astro-cid-vx4iavld] li[data-astro-cid-vx4iavld]+li[data-astro-cid-vx4iavld]:before{content:"/";color:var(--text-faint);margin-right:.4rem}.crumbs[data-astro-cid-vx4iavld] a[data-astro-cid-vx4iavld]{color:var(--text-dim)}.crumbs[data-astro-cid-vx4iavld] a[data-astro-cid-vx4iavld]:hover,.crumbs[data-astro-cid-vx4iavld] span[data-astro-cid-vx4iavld][aria-current]{color:var(--g-300)}
+.doc[data-astro-cid-ptuyl3tj]{grid-template-columns:minmax(0,1fr);align-items:start;gap:clamp(1.5rem,1rem + 3vw,3rem);padding-block:1.5rem 2rem;display:grid}@media (width>=62rem){.doc[data-astro-cid-ptuyl3tj]{grid-template-columns:15rem minmax(0,1fr)}.doc__aside[data-astro-cid-ptuyl3tj]{position:sticky;top:5rem}}.doc__body[data-astro-cid-ptuyl3tj]{max-width:46rem}.facts[data-astro-cid-ptuyl3tj]{flex-wrap:wrap;gap:.4rem;margin:0 0 1.5rem;padding:0;list-style:none;display:flex}.toc[data-astro-cid-ptuyl3tj]{border-left:var(--border);padding-left:.9rem}.toc__title[data-astro-cid-ptuyl3tj]{text-transform:uppercase;letter-spacing:.08em;color:var(--g-500);margin-bottom:.6rem;font-size:.7rem}.toc[data-astro-cid-ptuyl3tj] ol[data-astro-cid-ptuyl3tj]{gap:.3rem;margin:0;padding:0;list-style:none;display:grid}.toc[data-astro-cid-ptuyl3tj] a[data-astro-cid-ptuyl3tj]{color:var(--text-dim);font-size:.82rem;line-height:1.45;display:block}.toc[data-astro-cid-ptuyl3tj] a[data-astro-cid-ptuyl3tj]:hover{color:var(--g-300)}.toc__sub[data-astro-cid-ptuyl3tj]{padding-left:.75rem}.toc__sub[data-astro-cid-ptuyl3tj] a[data-astro-cid-ptuyl3tj]{color:var(--text-faint);font-size:.78rem}.pn[data-astro-cid-ptuyl3tj]{border-top:var(--border);grid-template-columns:1fr 1fr;gap:.75rem;margin-top:2.5rem;padding-top:1.5rem;display:grid}@media (width<=40rem){.pn[data-astro-cid-ptuyl3tj]{grid-template-columns:1fr}}.pn__item[data-astro-cid-ptuyl3tj]{border:var(--border);border-radius:var(--radius-lg);background:var(--bg-1);gap:.25rem;padding:.8rem 1rem;text-decoration:none;display:grid}.pn__item[data-astro-cid-ptuyl3tj]:hover{border-color:var(--g-700);text-decoration:none}.pn__item--next[data-astro-cid-ptuyl3tj]{text-align:right}.pn__dir[data-astro-cid-ptuyl3tj]{color:var(--g-500);font-size:.72rem}.pn__title[data-astro-cid-ptuyl3tj]{color:var(--text-strong);font-size:.9rem;font-family:var(--font-mono)}.doc__back[data-astro-cid-ptuyl3tj]{margin-top:1.5rem}.doc__back[data-astro-cid-ptuyl3tj] a[data-astro-cid-ptuyl3tj]{font-size:.875rem}
+</style><style>.shot[data-astro-cid-pmiqfeva]{max-width:100%;margin:0;display:inline-block}.shot[data-astro-cid-pmiqfeva] img{border-radius:13px;width:100%;display:block}.shot--missing[data-astro-cid-pmiqfeva]{width:100%;display:block}.shot__missing[data-astro-cid-pmiqfeva]{border:1px dashed var(--g-800);border-radius:var(--radius-lg);background:repeating-linear-gradient(45deg, var(--bg-1) 0 12px, var(--bg-2) 12px 24px);text-align:center;place-content:center;justify-items:center;gap:.5rem;min-height:16rem;padding:1.5rem;display:grid}.shot__missing-tag[data-astro-cid-pmiqfeva]{font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.1em;color:var(--warn);border:1px solid var(--warn);border-radius:var(--radius);padding:.1rem .4rem;font-size:.7rem}.shot__missing[data-astro-cid-pmiqfeva] .mono[data-astro-cid-pmiqfeva]{color:var(--text-faint);word-break:break-all}
+</style></head> <body> <a class="skip-link" href="#main">Skip to content</a> <div class="vignette" aria-hidden="true"></div> <div class="crt-overlay" aria-hidden="true"></div> <script>
+  (function () {
+    try {
+      var stored = localStorage.getItem('cd-crt');
+      if (stored === 'on') {
+        document.documentElement.setAttribute('data-crt', 'on');
+      }
+    } catch (e) {
+      /* 隐私模式下 localStorage 可能被禁，忽略即可 */
+    }
+  })();
+</script> <header class="hdr" data-astro-cid-nen7h5rs> <div class="wrap hdr__inner" data-astro-cid-nen7h5rs> <a class="brand" href="/en/" aria-label="ClearDeck" data-astro-cid-nen7h5rs> <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false" data-astro-cid-nen7h5rs> <rect width="32" height="32" rx="7" fill="#071009" data-astro-cid-nen7h5rs></rect> <rect x="0.5" y="0.5" width="31" height="31" rx="6.5" fill="none" stroke="#0b4a20" stroke-width="1" data-astro-cid-nen7h5rs></rect> <g transform="translate(4 4)" data-astro-cid-nen7h5rs> <path fill="#10d94f" d="M12,2L4,5.5V11c0,5 3.4,9.4 8,10.5c4.6,-1.1 8,-5.5 8,-10.5V5.5L12,2zM10.5,14.59l-2.83,-2.83l1.41,-1.41l1.41,1.41l3.54,-3.54l1.41,1.41L10.5,14.59z" data-astro-cid-nen7h5rs></path> </g> </svg> <span class="brand__name" data-astro-cid-nen7h5rs>ClearDeck</span>  </a> <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Open menu" data-astro-cid-nen7h5rs> <label class="nav-burger" for="nav-toggle" aria-hidden="true" data-astro-cid-nen7h5rs> <span data-astro-cid-nen7h5rs></span> </label> <nav class="nav" aria-label="Main" data-astro-cid-nen7h5rs> <ul class="nav__list" data-astro-cid-nen7h5rs> <li data-astro-cid-nen7h5rs> <a href="/en/features/" data-astro-cid-nen7h5rs> Features </a> </li><li data-astro-cid-nen7h5rs> <a href="/en/how-it-works/" data-astro-cid-nen7h5rs> How it works </a> </li><li data-astro-cid-nen7h5rs> <a href="/en/trust/" data-astro-cid-nen7h5rs> Privacy </a> </li><li data-astro-cid-nen7h5rs> <a href="/en/rules/" data-astro-cid-nen7h5rs> Rule lists </a> </li><li data-astro-cid-nen7h5rs> <a href="/en/guides/" data-astro-cid-nen7h5rs> Guides </a> </li><li data-astro-cid-nen7h5rs> <a href="/en/download/" data-astro-cid-nen7h5rs> Get it </a> </li> </ul> <div class="nav__extras" data-astro-cid-nen7h5rs> <a class="nav__more" href="/en/faq/" data-astro-cid-nen7h5rs>FAQ</a> <a class="nav__more" href="/en/roadmap/" data-astro-cid-nen7h5rs>Roadmap</a> <div class="lang" data-astro-cid-l4evwy7q> <span class="lang__icon" aria-hidden="true" data-astro-cid-l4evwy7q>⌘</span> <a href="/zh/guides/deep-inspection/" hreflang="zh-Hans" lang="zh-Hans" title="ClearDeck — 简体中文" data-astro-cid-l4evwy7q> 简体中文 </a> </div> </div> </nav> </div> </header> <script>
+  // 滚动一点才给导航加底色。不做防抖：只是一次 class 切换。
+  (function () {
+    var hdr = document.querySelector('.hdr');
+    if (!hdr) return;
+
+    function sync() {
+      hdr.classList.toggle('is-scrolled', window.scrollY > 8);
+    }
+
+    sync();
+    window.addEventListener('scroll', sync, { passive: true });
+  })();
+</script> <main id="main">   <div class="wrap" data-astro-cid-ptuyl3tj> <nav class="crumbs" aria-label="Breadcrumb" data-astro-cid-vx4iavld> <ol data-astro-cid-vx4iavld> <li data-astro-cid-vx4iavld> <a href="/en/" data-astro-cid-vx4iavld>Home</a> </li><li data-astro-cid-vx4iavld> <a href="/en/guides/" data-astro-cid-vx4iavld>Guides</a> </li><li data-astro-cid-vx4iavld> <span aria-current="page" data-astro-cid-vx4iavld>Deep inspection and the certificate</span> </li> </ol> </nav> <div class="doc" data-astro-cid-ptuyl3tj> <aside class="doc__aside" aria-label="On this page" data-astro-cid-ptuyl3tj> <nav class="toc" data-astro-cid-ptuyl3tj> <p class="toc__title mono" data-astro-cid-ptuyl3tj>On this page</p> <ol data-astro-cid-ptuyl3tj> <li class data-astro-cid-ptuyl3tj> <a href="#what-it-adds" data-astro-cid-ptuyl3tj>What it adds</a> </li><li class data-astro-cid-ptuyl3tj> <a href="#why-a-certificate-is-needed" data-astro-cid-ptuyl3tj>Why a certificate is needed</a> </li><li class data-astro-cid-ptuyl3tj> <a href="#installing-the-certificate" data-astro-cid-ptuyl3tj>Installing the certificate</a> </li><li class data-astro-cid-ptuyl3tj> <a href="#removing-it" data-astro-cid-ptuyl3tj>Removing it</a> </li><li class data-astro-cid-ptuyl3tj> <a href="#scope-controls" data-astro-cid-ptuyl3tj>Scope controls</a> </li><li class="toc__sub" data-astro-cid-ptuyl3tj> <a href="#which-apps--生效应用" data-astro-cid-ptuyl3tj>Which apps / 生效应用</a> </li><li class="toc__sub" data-astro-cid-ptuyl3tj> <a href="#wi-fi-only--仅-wi-fi" data-astro-cid-ptuyl3tj>Wi-Fi only / 仅 Wi-Fi</a> </li><li class="toc__sub" data-astro-cid-ptuyl3tj> <a href="#content-inspection-limit--内容检查上限" data-astro-cid-ptuyl3tj>Content inspection limit / 内容检查上限</a> </li><li class data-astro-cid-ptuyl3tj> <a href="#the-three-states" data-astro-cid-ptuyl3tj>The three states</a> </li><li class data-astro-cid-ptuyl3tj> <a href="#should-you-turn-it-on" data-astro-cid-ptuyl3tj>Should you turn it on?</a> </li><li class data-astro-cid-ptuyl3tj> <a href="#next" data-astro-cid-ptuyl3tj>Next</a> </li> </ol> </nav> </aside> <article class="doc__body prose" data-astro-cid-ptuyl3tj> <ul class="facts" data-astro-cid-ptuyl3tj> <li class="tag tag--dim mono" data-astro-cid-ptuyl3tj>Advanced</li><li class="tag tag--dim mono" data-astro-cid-ptuyl3tj>8 min read</li><li class="tag tag--dim mono" data-astro-cid-ptuyl3tj>Updated 2026-10-09</li> </ul>  <header class="gd__head" data-astro-cid-oie4ccay> <h1 data-astro-cid-oie4ccay>Deep inspection and the certificate</h1> <p class="lede" data-astro-cid-oie4ccay>What deep inspection adds, why it needs a certificate on your phone, how to install and remove it, and the honest limits of the technique.</p> </header> <p>Deep inspection is the most invasive thing ClearDeck does, and most people do not
+need it. This guide says plainly what it adds, why it asks for a certificate, and
+what installing one really means.</p>
+<h2 id="what-it-adds">What it adds</h2>
+<p>Without it, the firewall can judge a connection only by its hostname. Usually
+that is enough: a request to <code>ads.example.net</code> is a request to that host, full
+stop.</p>
+<p>But a hostname is coarse. One host can serve both what you want and what you do
+not: <code>news.example.com/article</code> and <code>news.example.com/promo</code> share a hostname, so
+a domain rule has to take both or neither. Deep inspection reads the <strong>full
+request path</strong>, so it can block <code>/promo</code> while allowing <code>/article</code> on the same
+host.</p>
+<p>It is also what the two URL modules need. <strong>Deep ad blocking</strong> and <strong>Deep tracker
+blocking</strong> (1,597 and 9,538 entries) have nothing to match against until deep
+inspection is on — before that they show as <strong>Paused</strong>. Those two lists are
+covered in <a href="/en/guides/modules/">rule lists</a>.</p>
+<figure class="shot shot--phone" data-astro-cid-pmiqfeva> <div class="phone" data-astro-cid-pmiqfeva>  <img src="/_astro/deep-inspection.CeoRu9Hj_Z1zQya7.webp" srcset="/_astro/deep-inspection.CeoRu9Hj_Z1aXtet.webp 340w, /_astro/deep-inspection.CeoRu9Hj_Z2mDd8F.webp 680w" alt="The deep inspection screen in ClearDeck, with its master switch and the three states On, Off and Paused" sizes="(max-width: 640px) 90vw, 340px" loading="lazy" decoding="async" data-astro-cid-pmiqfeva="true" width="1080" height="2125"> </div> <figcaption class="shot__caption" data-astro-cid-pmiqfeva>Deep inspection · the master switch</figcaption> </figure>
+<h2 id="why-a-certificate-is-needed">Why a certificate is needed</h2>
+<p>Requests inside apps are encrypted, so by default ClearDeck cannot read the path
+— it can see only the hostname. Installing ClearDeck’s certificate lets the phone
+hand those requests to ClearDeck for inspection, so it can look at the path
+before deciding.</p>
+<p>To be plain about it: the certificate <strong>stays on this phone and is never
+uploaded</strong>. It is what lets your own device examine your own traffic. It is not a
+key to anything on a server.</p>
+<aside class="note note--warn"> <span class="note__label">what this really means</span> <p>Deep inspection is the most invasive thing ClearDeck does, and it is worth being
+honest about why. Installing a user certificate makes ClearDeck able to see the
+decrypted content of the connections it intercepts. That is not a side effect —
+it is the entire technique. If an app talks to a server over TLS, the content
+inside is what matters, and inspecting it means decrypting it. The scope controls
+below let you narrow <em>what</em> gets inspected; they do not change that fundamental
+fact. If you are not comfortable with it, leave deep inspection off. The five
+bundled lists and the domain layer work without it.</p> </aside>
+<h2 id="installing-the-certificate">Installing the certificate</h2>
+<p>The app walks you through it. On the Certificate card, tap <strong>Install certificate /
+安装证书</strong>, then follow the two steps:</p>
+<ol>
+<li>Tap <strong>Install certificate</strong>. The file is saved to the Downloads folder and the
+phone’s certificate screen opens automatically.</li>
+<li>Choose <strong>Install certificate</strong> → <strong>CA certificate</strong> → <strong>Install anyway</strong>, then
+pick <code>cleardeck-ca.crt</code>. The system will warn that the certificate is not from
+a trusted source — that warning is expected, because it is ClearDeck’s own
+certificate.</li>
+</ol>
+<figure class="shot shot--phone" data-astro-cid-pmiqfeva> <div class="phone" data-astro-cid-pmiqfeva>  <img src="/_astro/deep-certificate.D10trETe_xU0CB.webp" srcset="/_astro/deep-certificate.D10trETe_Z1fVDV2.webp 340w, /_astro/deep-certificate.D10trETe_sGDvi.webp 680w" alt="The Certificate card in ClearDeck explaining that requests inside apps are encrypted and that the certificate stays on the phone" sizes="(max-width: 640px) 90vw, 340px" loading="lazy" decoding="async" data-astro-cid-pmiqfeva="true" width="1080" height="2125"> </div> <figcaption class="shot__caption" data-astro-cid-pmiqfeva>Certificate · what it is for</figcaption> </figure>
+<figure class="shot shot--phone" data-astro-cid-pmiqfeva> <div class="phone" data-astro-cid-pmiqfeva>  <img src="/_astro/deep-cert-steps.DIJQ1MdT_Z1grlm3.webp" srcset="/_astro/deep-cert-steps.DIJQ1MdT_ZPkudB.webp 340w, /_astro/deep-cert-steps.DIJQ1MdT_Z220e7N.webp 680w" alt="The two numbered certificate installation steps shown inside ClearDeck, naming the file cleardeck-ca.crt" sizes="(max-width: 640px) 90vw, 340px" loading="lazy" decoding="async" data-astro-cid-pmiqfeva="true" width="1080" height="2125"> </div> <figcaption class="shot__caption" data-astro-cid-pmiqfeva>Certificate · the two steps</figcaption> </figure>
+<p>Until the certificate is installed, the screen says so directly: <strong>Not working
+yet: the ClearDeck certificate is not installed.</strong> The switch can be on and deep
+inspection still will not work — the certificate is the part that matters.</p>
+<h2 id="removing-it">Removing it</h2>
+<p>To uninstall, open the phone’s <strong>Trusted credentials → User</strong> tab, find ClearDeck
+and remove it. Removing the certificate turns deep inspection off, and nothing
+else changes: the bundled domain lists and your own rules keep working exactly as
+before.</p>
+<p>The app offers <strong>View or remove certificate / 查看或移除证书</strong> to take you to the
+right screen.</p>
+<h2 id="scope-controls">Scope controls</h2>
+<p>Once a user certificate is installed, you should decide what it gets to see.
+Three controls do that.</p>
+<h3 id="which-apps--生效应用">Which apps / 生效应用</h3>
+<p><strong>All apps</strong>, or <strong>Only the apps I pick / 仅我选中的应用</strong>. The picker is searchable and shows how
+many you have chosen (<code>N selected</code>). Apps you leave out are untouched: their
+traffic is never exposed to deep inspection. This is the single most useful
+control — pick the browser you actually use, and leave the banking app out.</p>
+<figure class="shot shot--phone" data-astro-cid-pmiqfeva> <div class="phone" data-astro-cid-pmiqfeva>  <img src="/_astro/deep-app-picker.D7UnuxIa_aOWls.webp" srcset="/_astro/deep-app-picker.D7UnuxIa_Z8scJ7.webp 340w, /_astro/deep-app-picker.D7UnuxIa_Z1k7VDj.webp 680w" alt="The which-apps picker in ClearDeck, with a search box and a Selected only filter listing the chosen apps" sizes="(max-width: 640px) 90vw, 340px" loading="lazy" decoding="async" data-astro-cid-pmiqfeva="true" width="1080" height="2125"> </div> <figcaption class="shot__caption" data-astro-cid-pmiqfeva>Which apps · the picker</figcaption> </figure>
+<h3 id="wi-fi-only--仅-wi-fi">Wi-Fi only / 仅 Wi-Fi</h3>
+<p>On, deep inspection switches itself off on mobile data automatically. Decrypting
+and inspecting costs battery and data throughput, and on cellular both matter
+more, so this is a sensible default. Off, it runs on whatever connection you have.</p>
+<h3 id="content-inspection-limit--内容检查上限">Content inspection limit / 内容检查上限</h3>
+<p>The options are displayed as <strong>128K</strong>, <strong>256K</strong>, <strong>512K</strong> and <strong>1M</strong>; the default
+is <strong>256K</strong> (256 KB).
+ClearDeck inspects a request only up to this much of its content — anything larger
+passes through without being read word by word.</p>
+<p>The trade-off runs both ways:</p>
+<ul>
+<li><strong>Larger</strong> inspects more of each file, so it is likelier to catch an ad buried
+in a big response, but it holds more content in memory while checking.</li>
+<li><strong>Smaller</strong> uses less memory and less power, but may miss an ad that appears
+only deep inside a large file.</li>
+</ul>
+<p>256 KB is a reasonable middle. Reach for 1 MB only when you are chasing one
+specific annoyance; drop to 128 KB on an older or low-memory phone.</p>
+<figure class="shot shot--phone" data-astro-cid-pmiqfeva> <div class="phone" data-astro-cid-pmiqfeva>  <img src="/_astro/deep-body-limit.AL1tAeB-_Z46GXG.webp" srcset="/_astro/deep-body-limit.AL1tAeB-_1O8571.webp 340w, /_astro/deep-body-limit.AL1tAeB-_CslcO.webp 680w" alt="The content inspection limit options in ClearDeck: 128K, 256K, 512K and 1M, with 256K selected" sizes="(max-width: 640px) 90vw, 340px" loading="lazy" decoding="async" data-astro-cid-pmiqfeva="true" width="1080" height="2125"> </div> <figcaption class="shot__caption" data-astro-cid-pmiqfeva>Content inspection limit · 256K default</figcaption> </figure>
+<h2 id="the-three-states">The three states</h2>
+<p>The app reports deep inspection in three states:</p>
+<table>
+<thead>
+<tr>
+<th>State</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>On / 已开启</strong></td>
+<td>Deep inspection is running.</td>
+</tr>
+<tr>
+<td><strong>Off / 未开启</strong></td>
+<td>It is switched off.</td>
+</tr>
+<tr>
+<td><strong>Paused / 已暂停</strong></td>
+<td>Power saving is on and has paused deep inspection.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Paused</strong> is not a fault. <a href="/en/guides/power-saving/">Power saving</a> intentionally
+pauses deep inspection to save battery; turn power saving off and deep inspection
+comes back on its own. If the URL-layer modules are showing <strong>Paused</strong> as well,
+that is the same thing seen from the Modules tab.</p>
+<h2 id="should-you-turn-it-on">Should you turn it on?</h2>
+<p>Usually, no — and ClearDeck does not ask you to.</p>
+<p>The five bundled lists and the domain layer block the large majority of ads and
+trackers with no certificate, no decryption, and nothing installed on your device.
+Deep inspection adds path-level matching and the two URL modules on top, and it
+costs you a certificate that can read decrypted traffic. If precise URL rules are
+what you have been missing, it is worth it. If not, leave it off — the app works
+fully without it.</p>
+<h2 id="next">Next</h2>
+<ul>
+<li><a href="/en/guides/modules/">Rule lists: the five modules and your own</a> — the two URL
+modules deep inspection unlocks</li>
+<li><a href="/en/guides/power-saving/">Power saving</a> — why deep inspection can show as
+Paused</li>
+</ul> <section class="gd__related" data-astro-cid-oie4ccay> <h2 data-astro-cid-oie4ccay>Related guides</h2> <ul data-astro-cid-oie4ccay> <li data-astro-cid-oie4ccay> <a href="/en/guides/modules/" data-astro-cid-oie4ccay>Rule lists: the five modules and your own</a> </li><li data-astro-cid-oie4ccay> <a href="/en/guides/protection/" data-astro-cid-oie4ccay>Keep protection running</a> </li><li data-astro-cid-oie4ccay> <a href="/en/guides/power-saving/" data-astro-cid-oie4ccay>Power saving and battery use</a> </li> </ul> </section><p class="gd__lang small muted" data-astro-cid-oie4ccay> This guide is also available in  <a href="/zh/guides/deep-inspection/" hreflang="zh-Hans" data-astro-cid-oie4ccay> 简体中文 </a> </p> </article> </div> <nav class="pn" aria-label="Previous / Next" data-astro-cid-ptuyl3tj> <a class="pn__item pn__item--prev" href="/en/guides/modules/" rel="prev" data-astro-cid-ptuyl3tj> <span class="pn__dir mono" data-astro-cid-ptuyl3tj>← Previous</span> <span class="pn__title" data-astro-cid-ptuyl3tj>Rule lists: the five modules and your own</span> </a> <a class="pn__item pn__item--next" href="/en/guides/power-saving/" rel="next" data-astro-cid-ptuyl3tj> <span class="pn__dir mono" data-astro-cid-ptuyl3tj>Next →</span> <span class="pn__title" data-astro-cid-ptuyl3tj>Power saving and battery use</span> </a> </nav> <p class="doc__back" data-astro-cid-ptuyl3tj> <a href="/en/guides/" data-astro-cid-ptuyl3tj>← All guides</a> </p> </div>  </main> <footer class="ftr" data-astro-cid-jo6i4kqk> <div class="wrap" data-astro-cid-jo6i4kqk> <div class="ftr__top" data-astro-cid-jo6i4kqk> <div class="ftr__brand" data-astro-cid-jo6i4kqk> <p class="ftr__name" data-astro-cid-jo6i4kqk>ClearDeck<span class="ftr__zh" data-astro-cid-jo6i4kqk>御流</span></p> <p class="small muted ftr__tagline" data-astro-cid-jo6i4kqk>Local network firewall for Android</p> <p class="small ftr__status" data-astro-cid-jo6i4kqk> <span class="tag tag--dim" data-astro-cid-jo6i4kqk>Released · v1.0.0</span> </p> </div> <div class="ftr__cols" data-astro-cid-jo6i4kqk> <nav class="ftr__col" aria-label="Product" data-astro-cid-jo6i4kqk> <h2 class="ftr__coltitle" data-astro-cid-jo6i4kqk>Product</h2> <ul data-astro-cid-jo6i4kqk> <li data-astro-cid-jo6i4kqk> <a href="/en/features/" data-astro-cid-jo6i4kqk>Features</a> </li><li data-astro-cid-jo6i4kqk> <a href="/en/how-it-works/" data-astro-cid-jo6i4kqk>How it works</a> </li><li data-astro-cid-jo6i4kqk> <a href="/en/rules/" data-astro-cid-jo6i4kqk>Rule lists</a> </li><li data-astro-cid-jo6i4kqk> <a href="/en/download/" data-astro-cid-jo6i4kqk>Get it</a> </li> </ul> </nav><nav class="ftr__col" aria-label="Learn" data-astro-cid-jo6i4kqk> <h2 class="ftr__coltitle" data-astro-cid-jo6i4kqk>Learn</h2> <ul data-astro-cid-jo6i4kqk> <li data-astro-cid-jo6i4kqk> <a href="/en/guides/" data-astro-cid-jo6i4kqk>Guides</a> </li><li data-astro-cid-jo6i4kqk> <a href="/en/faq/" data-astro-cid-jo6i4kqk>FAQ</a> </li><li data-astro-cid-jo6i4kqk> <a href="/en/changelog/" data-astro-cid-jo6i4kqk>Changelog</a> </li><li data-astro-cid-jo6i4kqk> <a href="/en/roadmap/" data-astro-cid-jo6i4kqk>Roadmap</a> </li> </ul> </nav><nav class="ftr__col" aria-label="Legal" data-astro-cid-jo6i4kqk> <h2 class="ftr__coltitle" data-astro-cid-jo6i4kqk>Legal</h2> <ul data-astro-cid-jo6i4kqk> <li data-astro-cid-jo6i4kqk> <a href="/en/legal/privacy-policy/" data-astro-cid-jo6i4kqk>Privacy policy</a> </li><li data-astro-cid-jo6i4kqk> <a href="/en/legal/terms/" data-astro-cid-jo6i4kqk>Terms of use</a> </li><li data-astro-cid-jo6i4kqk> <a href="/en/legal/third-party-sdk/" data-astro-cid-jo6i4kqk>Third-party SDKs</a> </li><li data-astro-cid-jo6i4kqk> <a href="/en/legal/membership/" data-astro-cid-jo6i4kqk>Membership terms</a> </li> </ul> </nav><nav class="ftr__col" aria-label="Company" data-astro-cid-jo6i4kqk> <h2 class="ftr__coltitle" data-astro-cid-jo6i4kqk>Company</h2> <ul data-astro-cid-jo6i4kqk> <li data-astro-cid-jo6i4kqk> <a href="/en/about/" data-astro-cid-jo6i4kqk>About</a> </li> </ul> </nav> <div class="ftr__col" data-astro-cid-jo6i4kqk> <h2 class="ftr__coltitle" data-astro-cid-jo6i4kqk>Contact</h2> <ul data-astro-cid-jo6i4kqk> <li data-astro-cid-jo6i4kqk> <a href="mailto:support@fenghongtech.cn" data-astro-cid-jo6i4kqk>support@fenghongtech.cn</a> </li> <li data-astro-cid-jo6i4kqk> <span class="muted" data-astro-cid-jo6i4kqk>GitHub</span> </li> </ul> </div> </div> </div> <div class="divider-dots" data-astro-cid-jo6i4kqk></div> <div class="ftr__bottom" data-astro-cid-jo6i4kqk> <p class="small muted" data-astro-cid-jo6i4kqk>
+© 2026 Beijing Fenghong Technology Co., Ltd. · v1.0.0 </p> <div class="ftr__bottom-right" data-astro-cid-jo6i4kqk> <button class="crt-btn" type="button" id="crt-toggle" aria-pressed="false" data-label-on="Scanline effect on" data-label-off="Scanline effect off" data-astro-cid-avkchape> <span class="crt-btn__box" aria-hidden="true" data-astro-cid-avkchape></span> <span class="crt-btn__text" data-astro-cid-avkchape>Scanlines</span> </button>  <script>
+  (function () {
+    var btn = document.getElementById('crt-toggle');
+    if (!btn) return;
+    var root = document.documentElement;
+
+    function sync() {
+      var on = root.getAttribute('data-crt') === 'on';
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      btn.title = on ? btn.dataset.labelOn : btn.dataset.labelOff;
+    }
+
+    sync();
+
+    btn.addEventListener('click', function () {
+      var on = root.getAttribute('data-crt') === 'on';
+      var next = on ? 'off' : 'on';
+      root.setAttribute('data-crt', next);
+      try {
+        localStorage.setItem('cd-crt', next);
+      } catch (e) {
+        /* 忽略：无法持久化也仍然切换当前页面 */
+      }
+      sync();
+    });
+  })();
+</script> </div> </div> <p class="small ftr__disclaimer muted" data-astro-cid-jo6i4kqk>ClearDeck is an independent project. Android is a trademark of Google LLC.</p> </div> </footer>  </body> </html>
