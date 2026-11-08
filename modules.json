@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "channel": "stable",
+  "generated": "202611081541",
+  "generatedAt": "2026-11-08T15:41:00Z",
+  "modules": [
+    {
+      "id": "cleardeck-ads",
+      "layer": "domain",
+      "file": "cleardeck-ads.zip",
+      "artifact": "ads.list",
+      "version": "202611081443-2f379663",
+      "stamp": "202611081443",
+      "entries": 92232,
+      "bytes": 2127003,
+      "zipBytes": 747809,
+      "sha256": "db4a7a42da05423c16fddbc5a3f191b32960ee103d68bb4130ced9b22500491c"
+    },
+    {
+      "id": "cleardeck-track",
+      "layer": "domain",
+      "file": "cleardeck-track.zip",
+      "artifact": "track.list",
+      "version": "202611081541-4d7c5870",
+      "stamp": "202611081541",
+      "entries": 135812,
+      "bytes": 3450851,
+      "zipBytes": 1079950,
+      "sha256": "6f7ec643441ac844b4b6dc6f230caa1044f2b31c6abe8755c9d4cbc2a5540635"
+    },
+    {
+      "id": "cleardeck-malware",
+      "layer": "domain",
+      "file": "cleardeck-malware.zip",
+      "artifact": "malware.list",
+      "version": "202611081443-51ca1704",
+      "stamp": "202611081443",
+      "entries": 188782,
+      "bytes": 3979379,
+      "zipBytes": 1295298,
+      "sha256": "9987d6c51c79e8ebab90d4b714736c241dfd7a286d150fcebf017a796c8906e0"
+    },
+    {
+      "id": "cleardeck-ads-deep",
+      "layer": "url",
+      "file": "cleardeck-ads-deep.zip",
+      "artifact": "ads-deep.url",
+      "version": "202611081443-3e13c3e7",
+      "stamp": "202611081443",
+      "entries": 1938,
+      "bytes": 64619,
+      "zipBytes": 25624,
+      "sha256": "54844d63a28fa742e4c05b1831bdc9845f1ed5fad04c5cbc2f43350c4a0e3d05"
+    },
+    {
+      "id": "cleardeck-track-deep",
+      "layer": "url",
+      "file": "cleardeck-track-deep.zip",
+      "artifact": "track-deep.url",
+      "version": "202611081443-a40ef4a9",
+      "stamp": "202611081443",
+      "entries": 9659,
+      "bytes": 332896,
+      "zipBytes": 110908,
+      "sha256": "096d1f6c734be19755300f797e1ebf18f2e6a7550861d0066dc18e4f2b7b45e6"
+    }
+  ],
+  "totals": {
+    "entries": 428423,
+    "bytes": 9954748,
+    "zipBytes": 3259589
+  }
+}
