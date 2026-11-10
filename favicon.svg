@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="ClearDeck">
+  <rect width="32" height="32" rx="7" fill="#071009"/>
+  <rect x="0.5" y="0.5" width="31" height="31" rx="6.5" fill="none" stroke="#0b4a20" stroke-width="1"/>
+  <!-- 与 App 启动图标同一个盾牌加勾形状，换成站点磷光绿 -->
+  <g transform="translate(4 4) scale(1)">
+    <path fill="#10d94f" d="M12,2L4,5.5V11c0,5 3.4,9.4 8,10.5c4.6,-1.1 8,-5.5 8,-10.5V5.5L12,2zM10.5,14.59l-2.83,-2.83l1.41,-1.41l1.41,1.41l3.54,-3.54l1.41,1.41L10.5,14.59z"/>
+  </g>
+</svg>
