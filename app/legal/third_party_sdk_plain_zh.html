@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第三方 SDK 列表</title>
+<meta name="cleardeck-doc" content="third_party_sdk_plain_zh">
+<meta name="cleardeck-version" content="1.2">
+<meta name="cleardeck-updated" content="2026-10-25">
+<meta name="cleardeck-effective" content="2026-10-25">
+<meta name="robots" content="noindex">
+<style>
+:root { color-scheme: light dark; --bg: #ffffff; --fg: #1f2937; --muted: #64748b; --border: #e2e8f0; --accent: #0ea5e9; --code: #f1f5f9; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0f172a; --fg: #e2e8f0; --muted: #94a3b8; --border: #1e293b; --accent: #38bdf8; --code: #1e293b; }
+}
+html, body { background: var(--bg); color: var(--fg); }
+body {
+  margin: 0;
+  padding: 20px 20px calc(32px + env(safe-area-inset-bottom));
+  font-family: -apple-system, "Noto Sans CJK SC", "Source Han Sans SC", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-text-size-adjust: 100%;
+  word-break: break-word;
+}
+h1, h2, h3 { color: var(--fg); line-height: 1.4; }
+h1 { font-size: 22px; margin: 0 0 .4em; }
+h2 { font-size: 18px; margin: 1.8em 0 .6em; }
+h3 { font-size: 16px; margin: 1.4em 0 .4em; }
+.docmeta { margin: 0 0 1.6em; color: var(--muted); font-size: 13px; }
+p { margin: .6em 0; }
+ul, ol { padding-left: 1.4em; margin: .6em 0; }
+li { margin: .3em 0; }
+a { color: var(--accent); text-decoration: none; }
+strong { font-weight: 600; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 1.6em 0; }
+code { background: var(--code); border-radius: 4px; padding: .1em .35em; font-size: .9em; }
+blockquote {
+  margin: 1em 0;
+  padding: .7em .9em;
+  border-left: 3px solid var(--accent);
+  background: var(--code);
+  border-radius: 0 8px 8px 0;
+}
+blockquote p { margin: .25em 0; }
+table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: .55em .6em; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; white-space: nowrap; }
+</style>
+</head>
+<body>
+<!-- Generated from ClearDeck-web/src/content/legal. Do not edit by hand. -->
+<header>
+<h1>第三方 SDK 列表</h1>
+<p class="docmeta">版本 1.2 · 最后更新 2026-10-25 · 生效日期 2026-10-25</p>
+</header>
+<p>本清单列出御流 Android 应用（以下简称“本应用”）各渠道安装包中会处理个人数据的第三方 SDK，以及本网站使用的第三方服务。本清单与《隐私政策》配套适用。</p>
+<h2>适用范围</h2>
+<p>本应用针对不同应用商店发布四个渠道的安装包：华为、小米、Google 与 OPPO。各渠道包含的第三方 SDK 不同，具体内容见下文相应渠道一节。</p>
+<p>本清单仅列出会处理个人数据的第三方 SDK。基础开发库（例如网络请求库与界面框架）不在此列。</p>
+<h2>渠道说明</h2>
+<table>
+<thead>
+<tr>
+<th>渠道</th>
+<th>包含的第三方 SDK</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>华为</td>
+<td>友盟+（U-App、U-APM）、华为账号与支付组件</td>
+</tr>
+<tr>
+<td>小米</td>
+<td>友盟+（U-App、U-APM）、小米账号与支付组件（应用联运）</td>
+</tr>
+<tr>
+<td>Google</td>
+<td>无</td>
+</tr>
+<tr>
+<td>OPPO</td>
+<td>支付宝客户端 SDK（APP 支付）</td>
+</tr>
+</tbody></table>
+<h2>Google 渠道</h2>
+<p>Google 渠道的安装包不集成会处理个人数据的第三方 SDK，不包含统计、广告、推送与崩溃上报组件，也不包含会员购买与支付能力。</p>
+<h3>初始化与同意</h3>
+<ul>
+<li>本渠道不含统计与支付组件，因此不涉及第三方 SDK 的预初始化或同意后采集。</li>
+</ul>
+<h2>同意前的数据处理</h2>
+<ul>
+<li>在您同意《隐私政策》之前，本应用不会为统计目的采集数据。</li>
+<li>在您同意《隐私政策》之前，本应用会为检查规则名单更新请求一次规则清单，该请求不包含设备标识或账号。详见《隐私政策》“规则名单更新”一节。</li>
+</ul>
+<h2>数据共享与保留</h2>
+<p>除本清单与《隐私政策》列明的情形外，我们不会向第三方提供个人信息。</p>
+<p>如本渠道包含第三方 SDK，其按提供方隐私政策规定的期限保留数据。如需了解具体保留期限，请查阅相应 SDK 提供方的隐私政策，或通过本清单“联系方式”一节的邮箱联系我们。</p>
+<h2>您的选择</h2>
+<ul>
+<li>不同意《隐私政策》时，本应用无法运行。</li>
+<li>卸载本应用后，本应用不再收集使用统计与崩溃信息。</li>
+<li>如您希望删除会员相关数据，请通过本清单“联系方式”一节的邮箱联系我们。</li>
+</ul>
+<h2>变更</h2>
+<p>我们可能根据法律法规、业务或技术变化更新本清单。更新后的清单将在本网站发布，并更新文首的版本号、最后更新日期与生效日期。</p>
+<h2>联系方式</h2>
+<p>如您对本清单有任何疑问，请通过以下邮箱联系我们：<a href="mailto:support@fenghongtech.cn">support@fenghongtech.cn</a>。</p>
+<h2>适用法律</h2>
+<p>本清单适用中华人民共和国法律。因本清单产生的争议，双方应协商解决；协商不成的，提交北京市有管辖权的人民法院解决。</p>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Third-Party SDK List</title>
+<meta name="cleardeck-doc" content="third_party_sdk_alipay_en">
+<meta name="cleardeck-version" content="1.2">
+<meta name="cleardeck-updated" content="2026-10-25">
+<meta name="cleardeck-effective" content="2026-10-25">
+<meta name="robots" content="noindex">
+<style>
+:root { color-scheme: light dark; --bg: #ffffff; --fg: #1f2937; --muted: #64748b; --border: #e2e8f0; --accent: #0ea5e9; --code: #f1f5f9; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0f172a; --fg: #e2e8f0; --muted: #94a3b8; --border: #1e293b; --accent: #38bdf8; --code: #1e293b; }
+}
+html, body { background: var(--bg); color: var(--fg); }
+body {
+  margin: 0;
+  padding: 20px 20px calc(32px + env(safe-area-inset-bottom));
+  font-family: -apple-system, "Noto Sans CJK SC", "Source Han Sans SC", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-text-size-adjust: 100%;
+  word-break: break-word;
+}
+h1, h2, h3 { color: var(--fg); line-height: 1.4; }
+h1 { font-size: 22px; margin: 0 0 .4em; }
+h2 { font-size: 18px; margin: 1.8em 0 .6em; }
+h3 { font-size: 16px; margin: 1.4em 0 .4em; }
+.docmeta { margin: 0 0 1.6em; color: var(--muted); font-size: 13px; }
+p { margin: .6em 0; }
+ul, ol { padding-left: 1.4em; margin: .6em 0; }
+li { margin: .3em 0; }
+a { color: var(--accent); text-decoration: none; }
+strong { font-weight: 600; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 1.6em 0; }
+code { background: var(--code); border-radius: 4px; padding: .1em .35em; font-size: .9em; }
+blockquote {
+  margin: 1em 0;
+  padding: .7em .9em;
+  border-left: 3px solid var(--accent);
+  background: var(--code);
+  border-radius: 0 8px 8px 0;
+}
+blockquote p { margin: .25em 0; }
+table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: .55em .6em; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; white-space: nowrap; }
+</style>
+</head>
+<body>
+<!-- Generated from ClearDeck-web/src/content/legal. Do not edit by hand. -->
+<header>
+<h1>Third-Party SDK List</h1>
+<p class="docmeta">Version 1.2 · Last updated 2026-10-25 · Effective 2026-10-25</p>
+</header>
+<p>This list sets out the third-party SDKs in each build of the ClearDeck Android app (the “App”) that process personal data, and the third-party services used by this website. It supplements the Privacy Policy.</p>
+<h2>Scope</h2>
+<p>The App is released in four builds for different app stores: Huawei, Xiaomi, Google and OPPO. Each build contains a different set of third-party SDKs, as described in the corresponding section below.</p>
+<p>This list covers only third-party SDKs that process personal data. Base development libraries (such as HTTP clients and UI frameworks) are not listed.</p>
+<h2>Builds</h2>
+<table>
+<thead>
+<tr>
+<th>Build</th>
+<th>Third-party SDKs included</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Huawei</td>
+<td>Umeng (U-App, U-APM), Huawei account and payment components</td>
+</tr>
+<tr>
+<td>Xiaomi</td>
+<td>Umeng (U-App, U-APM), Xiaomi account and payment components (app joint operation)</td>
+</tr>
+<tr>
+<td>Google</td>
+<td>None</td>
+</tr>
+<tr>
+<td>OPPO</td>
+<td>Alipay client SDK (in-app payment)</td>
+</tr>
+</tbody></table>
+<h2>OPPO Build</h2>
+<table>
+<thead>
+<tr>
+<th>SDK</th>
+<th>Provider</th>
+<th>Version</th>
+<th>Data processed</th>
+<th>Purpose</th>
+<th>Privacy policy</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Alipay client SDK (in-app payment)</td>
+<td>Alipay (Alipay.com Co., Ltd.)</td>
+<td>15.8.42</td>
+<td>Transaction and order information, device information (device model, OS version, etc.), network information</td>
+<td>To complete membership purchases and payments in the OPPO build</td>
+<td><a href="https://opendocs.alipay.com/open/01l92q/">https://opendocs.alipay.com/open/01l92q/</a></td>
+</tr>
+</tbody></table>
+<p>Membership in the OPPO build is paid through Alipay. The App does not access your Alipay account or payment details: the order string is signed by our server and handed to the Alipay client to complete the payment.</p>
+<p>This build has no channel account system. Membership is bound to this device using an irreversible hash of ANDROID_ID (see the Privacy Policy); that hash is never sent to Alipay. The membership service backend is operated by us. The data it processes is described in the “Membership Service and Payment” section of the Privacy Policy.</p>
+<h3>Initialisation and Consent</h3>
+<ul>
+<li>The Alipay client SDK is used only when you open the membership screen and start a purchase. This build contains no analytics components, so no post-consent collection takes place.</li>
+</ul>
+<h2>Processing Before Consent</h2>
+<ul>
+<li>Before you accept the Privacy Policy, the App does not collect data for analytics purposes.</li>
+<li>Before you accept the Privacy Policy, the App requests the rule list manifest once to check for updates. That request does not contain a Device Identifier or account. See the “Rule List Updates” section of the Privacy Policy.</li>
+</ul>
+<h2>Membership Data Processing</h2>
+<p>The Membership Service involves the following Processing:</p>
+<ul>
+<li>Alipay processes payments. We do not access your Alipay account information, payment method, bank card number or billing address.</li>
+<li>To verify orders and calculate the trial period, the App sends the order number, product identifier, SHA-256 hash of ANDROID_ID and trial start to our membership service. To credit occasional payments that were not delivered, it also sends the Alipay transaction number you provide.</li>
+<li>This data is used only to provide the Membership Service. Membership data is kept separate from access records.</li>
+</ul>
+<h2>Data Sharing and Retention</h2>
+<p>Except as described in this list and the Privacy Policy, we do not provide Personal Information to third parties.</p>
+<p>Where this build includes third-party SDKs, they retain data for the periods set out in their own privacy policies. To understand a specific retention period, refer to the relevant provider’s privacy policy, or contact us at the email address in the “Contact” section.</p>
+<h2>Your Choices</h2>
+<ul>
+<li>Without accepting the Privacy Policy, the App cannot run.</li>
+<li>After you uninstall the App, it no longer collects usage analytics or crash information.</li>
+<li>To request deletion of membership-related data, contact us at the email address in the “Contact” section.</li>
+</ul>
+<h2>Changes</h2>
+<p>We may update this list in response to changes in laws, regulations, business or technology. The updated list will be published on this website, and the version number, last updated date and effective date at the top of the document will be updated.</p>
+<h2>Contact</h2>
+<p>If you have any question about this list, contact us at: <a href="mailto:support@fenghongtech.cn">support@fenghongtech.cn</a>.</p>
+<h2>Governing Law</h2>
+<p>This list is governed by the laws of the People’s Republic of China. Any dispute arising from this list shall be resolved through negotiation; if negotiation fails, it shall be submitted to the competent people’s court in Beijing.</p>
+</body>
+</html>
