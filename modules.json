@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "channel": "stable",
+  "generated": "202611250046",
+  "generatedAt": "2026-11-25T00:46:00Z",
+  "modules": [
+    {
+      "id": "cleardeck-ads",
+      "layer": "domain",
+      "file": "cleardeck-ads.zip",
+      "artifact": "ads.list",
+      "version": "202611250046-68351a16",
+      "stamp": "202611250046",
+      "entries": 115478,
+      "bytes": 2640664,
+      "zipBytes": 949506,
+      "sha256": "063b92a32a03e5759479bb080a8e9a370556fe10ea10be0c291f5d91736e04e3"
+    },
+    {
+      "id": "cleardeck-track",
+      "layer": "domain",
+      "file": "cleardeck-track.zip",
+      "artifact": "track.list",
+      "version": "202611250046-b8db2c7c",
+      "stamp": "202611250046",
+      "entries": 140346,
+      "bytes": 3565046,
+      "zipBytes": 1117886,
+      "sha256": "d305f96b0a838238f66cf30812e80121d59fa12f936f388d37c200be0098b4ae"
+    },
+    {
+      "id": "cleardeck-malware",
+      "layer": "domain",
+      "file": "cleardeck-malware.zip",
+      "artifact": "malware.list",
+      "version": "202611250046-e493476d",
+      "stamp": "202611250046",
+      "entries": 134708,
+      "bytes": 2847020,
+      "zipBytes": 894716,
+      "sha256": "3c44fa1b1a31d08c0373f9a21b50e20550bc232e419e1fc5545ac41476e8afa8"
+    },
+    {
+      "id": "cleardeck-ads-deep",
+      "layer": "url",
+      "file": "cleardeck-ads-deep.zip",
+      "artifact": "ads-deep.url",
+      "version": "202611250046-5c8ac9ee",
+      "stamp": "202611250046",
+      "entries": 1959,
+      "bytes": 65291,
+      "zipBytes": 25894,
+      "sha256": "5a7fdeee21cf4c5e4a81d4ba4f5b3138d3888be188bdd87ee3405c08efd34bbf"
+    },
+    {
+      "id": "cleardeck-track-deep",
+      "layer": "url",
+      "file": "cleardeck-track-deep.zip",
+      "artifact": "track-deep.url",
+      "version": "202611250046-ff91573f",
+      "stamp": "202611250046",
+      "entries": 9791,
+      "bytes": 337663,
+      "zipBytes": 112505,
+      "sha256": "dd7ab6f9ce78153cc82a1e085bf1b46e8f8bd75e1b476eceaf8a7b68f62629ce"
+    }
+  ],
+  "totals": {
+    "entries": 402282,
+    "bytes": 9455684,
+    "zipBytes": 3100507
+  }
+}
